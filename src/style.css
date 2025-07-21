@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+body {
+  font-family: "Inter Variable", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  letter-spacing: -0.09em;
+}
+
+.ls {
+  letter-spacing: -0.09em;
+}

@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body>
+  <section class="relative w-full min-h-screen md:h-[1024px] bg-cover bg-center overflow-hidden"
+    style="background-image: url('/assets/landing-img.png')">
+    <!-- Contact Now Button -->
+    <div class="absolute top-2 sm:top-4 md:top-16 left-0 right-0 z-10 w-full">
+      <div class="flex items-center justify-between w-full px-2 sm:px-4 md:px-20 max-w-screen-xl mx-auto">
+        <img src="/logo.png" alt="Logo" class="h-6 md:h-9 w-auto" />
+        <button aria-label="Contact Now"
+          class="bg-white text-base sm:text-lg md:text-2xl text-gray-700 px-3 sm:px-4 md:px-2.5 py-1 sm:py-1.5 md:py-2 rounded-[10px] shadow-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-400">
+          Contact Now
+        </button>
+      </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black/35 md:bg-black/20 bg-opacity-40 pointer-events-none"></div>
+
+    <div
+      class="relative z-10 w-full h-full flex flex-col lg:flex-row items-center lg:items-end justify-between px-2 sm:px-4 md:px-16 py-20 sm:py-16 md:py-20 max-w-screen-xl mx-auto">
+      <!-- Left Text Content -->
+      <div class="text-white w-full lg:max-w-xl mb-8 lg:mb-0 text-center lg:text-left px-2 sm:px-0">
+        <h1 class="text-3xl sm:text-3xl md:text-5xl lg:text-6xl leading-tight mb-3 sm:mb-4 md:mb-6 font-semibold">
+          Invest in India's <br />
+          Next Tech Titan <br />
+          Master Franchise <br />
+          Opportunity
+        </h1>
+        <p class="text-base md:text-xl lg:text-2xl text-gray-200">
+          Integrating Global-Standard Korean <br class="hidden md:block" /> Innovation with Indian Market Scale
+        </p>
+      </div>
+
+      <!-- Form -->
+      <div
+        class="bg-white/10 backdrop-blur-md rounded-2xl border border-white p-3 sm:p-4 md:p-8 w-full max-w-[510px] text-white shadow-xl flex flex-col gap-2 sm:gap-4">
+        <h2
+          class="text-lg sm:text-2xl md:text-3xl lg:text-[40px] leading-tight mb-2 sm:mb-4 md:mb-6 text-center lg:text-left font-semibold"
+          style="font-weight: 400; letter-spacing: -0.09em;">
+          Let's Build the Next Big <br class="hidden md:block" />
+          Brand Together
+        </h2>
+        <form class="space-y-3 sm:space-y-4 md:space-y-5" autocomplete="off">
+          <div class="flex flex-col sm:flex-row gap-3 sm:gap-4">
+            <input aria-label="First Name" type="text" placeholder="First Name"
+              class="w-full sm:w-1/2 px-2 md:pr-4 py-2 md:py-3 bg-transparent border-b border-white focus:outline-none focus:ring-2 focus:ring-blue-400 placeholder-white text-sm md:text-base rounded-none" />
+            <input aria-label="Last Name" type="text" placeholder="Last Name"
+              class="w-full sm:w-1/2 px-2 md:pr-4 py-2 md:py-3 bg-transparent border-b border-white focus:outline-none focus:ring-2 focus:ring-blue-400 placeholder-white text-sm md:text-base rounded-none" />
+          </div>
+          <input aria-label="Phone Number" type="text" placeholder="Phone Number"
+            class="w-full px-2 md:pr-4 py-2 md:py-3 bg-transparent border-b border-white focus:outline-none focus:ring-2 focus:ring-blue-400 placeholder-white text-sm md:text-base rounded-none" />
+          <input aria-label="Email" type="email" placeholder="Email"
+            class="w-full px-2 md:pr-4 py-2 md:py-3 bg-transparent border-b border-white focus:outline-none focus:ring-2 focus:ring-blue-400 placeholder-white text-sm md:text-base rounded-none" />
+          <select aria-label="State"
+            class="w-full px-2 md:pr-4 py-2 md:py-3 bg-transparent border-b border-white focus:outline-none focus:ring-2 focus:ring-blue-400 text-white text-sm md:text-base appearance-none rounded-none">
+            <option class="text-black" disabled selected>State</option>
+            <option class="text-black">Telangana</option>
+            <option class="text-black">Karnataka</option>
+            <option class="text-black">Tamil Nadu</option>
+          </select>
+          <select aria-label="Investment Capacity"
+            class="w-full px-2 md:pr-4 py-2 md:py-3 bg-transparent border-b border-white focus:outline-none focus:ring-2 focus:ring-blue-400 text-white text-sm md:text-base appearance-none rounded-none">
+            <option class="text-black" disabled selected>Investment Capacity</option>
+            <option class="text-black">₹5L – ₹20L</option>
+            <option class="text-black">₹20L – ₹1Cr</option>
+            <option class="text-black">₹1Cr+</option>
+          </select>
+          <div class="flex justify-center lg:justify-start">
+            <button aria-label="Submit" type="submit"
+              class="px-6 md:px-11 py-2 bg-white text-base md:text-2xl text-gray-800 rounded-md hover:bg-gray-100 transition w-full sm:w-auto focus:outline-none focus:ring-2 focus:ring-blue-400">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="relative">
+    <div style="
+      position: absolute;
+      width: 100%;
+      height: 900px;
+      left: 0px;
+      top: 0px;
+      background: url(./public/assets/sec-bg.jpg);
+      background-position: center;
+      object-fit: cover;
+      background-size: cover;
+      opacity: 0.41;
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+      "></div>
+    <div class="relative z-20">
+      <div class="flex flex-col md:flex-row justify-between items-start md:py-[136px] mx-8 md:mx-20 pt-5 mb-5">
+        <p class="text-2xl md:w-1/2">The Opportunity</p>
+        <div class="flex flex-col gap-5 md:w-1/2">
+          <h2 class="text-4xl md:text-6xl " style="
+          font-weight: 400;
+          letter-spacing: -0.09em; ">
+            Partner with a Global Trusted Brand in Over 160+ Countries
+          </h2>
+          <p class="text-2xl" style="
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 32px;
+          letter-spacing: -0.09em;
+          ">
+            With over 58+ years of legacy, Daewoo is now opening doors for
+            strategic partners across 30 master franchise regions in India.
+            Build a sustainable, high-margin business by aligning with a
+            globally respected brand in the consumer durables sector.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-[#071827] text-white px-6 md:px-11 py-16 mx-2 md:mx-8 rounded-3xl">
+        <div class="max-w-7xl mx-auto">
+          <!-- Header -->
+          <div class="mb-12">
+            <button class="bg-[#006BB7] text-white text-2xl font-medium px-3.5 py-1.5 rounded-md mb-5 md:mb-11">
+              Why now?
+            </button>
+            <h2 class="text-3xl md:text-6xl leading-tight" style="
+            font-weight: 400;
+            /* font-size: 60px; */
+            /* line-height: 73px; */
+            letter-spacing: -0.09em; ">
+              Why India. Why This is a <br class="hidden md:block" />
+              Rare Opportunity
+            </h2>
+          </div>
+
+          <!-- Stats Grid -->
+          <div class="grid grid-cols-1 items-end md:grid-cols-4 gap-4 md:gap-6">
+            <!-- Card 1 -->
+            <div class="bg-[#0366D6] rounded-xl p-6 md:p-8 flex flex-col justify-end h-52 md:h-[440px] text-center ">
+              <h3 class="text-[80px] mb-1">160+</h3>
+              <p class="text-2xl opacity-80" style="letter-spacing: -0.09em;">Countries Served</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-[#1789FC] rounded-xl p-6 md:p-8 flex flex-col justify-end h-52 md:h-[231px] text-center">
+              <h3 class="text-[80px] mb-1">10%</h3>
+              <p class="text-2xl opacity-80" style="letter-spacing: -0.09em;">
+                Compound Annual Growth Rate
+              </p>
+            </div>
+            <!-- Card 3 -->
+            <div class="bg-[#3FA9F5] rounded-xl p-6 md:p-8 flex flex-col justify-end h-52 md:h-[400px] text-center">
+              <h3 class="text-[80px] mb-1">99%</h3>
+              <p class="text-2xl opacity-80" style="letter-spacing: -0.09em;">
+                Customer Satisfaction Rate
+              </p>
+            </div>
+            <!-- Card 4 -->
+            <div class="bg-[#72C7FF] rounded-xl p-6 md:p-8 flex flex-col justify-end h-52 md:h-[286px] text-center">
+              <h3 class="text-[80px] mb-1">58+</h3>
+              <p class="text-2xl opacity-80" style="letter-spacing: -0.09em;">Years of Experience</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="px-6 md:px-[76px] pt-10 md:pt-[130px]">
+    <div class="bg-white ">
+      <div class="max-w-7xl mx-auto mb-10 md:mb-28 flex justify-between flex-col md:flex-row ">
+        <div class="flex flex-col justify-between md:w-1/2 mb-5 md:mb-0">
+          <div>
+            <h2 class="text-4xl md:text-6xl ls mb-5">
+              Strong Returns. <br />
+              Smart Investment.
+            </h2>
+            <p class="ls text-2xl text-black/50">Varies by state population, infra & product mix.</p>
+          </div>
+          <p class="text-[20px] text-black/50">
+            Get clear, transparent breakdowns of <br />
+            every option. So you can confidently choose what's <br />
+            right for you.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-gray-800 md:w-1/2">
+          <!-- Card 1 -->
+          <div class="bg-gray-100 rounded-xl p-6 shadow-sm flex flex-col gap-2">
+            <div class="text-blue-600 text-3xl mb-24">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M27.8657 7.8052C27.8657 6.65243 27.6718 5.5477 27.3083 4.51501C29.792 5.82388 31.5003 8.42962 31.5003 11.4076C31.5003 15.7065 27.9626 19.2128 23.6252 19.2128C22.0018 19.2128 20.4752 18.7205 19.2273 17.8799C20.4267 17.6878 21.5656 17.2915 22.5833 16.7151C25.6727 14.998 27.7808 11.7558 27.8657 8.02135V7.8052ZM16.9859 15.5864C17.1798 15.5984 17.3736 15.6104 17.5675 15.6104C18.355 15.6104 19.1183 15.4903 19.8331 15.2862C23.0679 14.3135 25.4426 11.3235 25.4426 7.8052C25.4426 7.27685 25.3941 6.77251 25.2851 6.26818C25.0912 5.30754 24.7277 4.41895 24.2068 3.62642C22.8135 1.45297 20.354 0 17.5675 0C13.2301 0 9.6924 3.50634 9.6924 7.8052C9.6924 11.9119 12.9151 15.2862 16.9859 15.5864ZM7.08757 19.3689C6.76045 19.2608 6.4091 19.2128 6.05775 19.2128H3.63465C1.63559 19.2128 0 20.8339 0 22.8152V32.3976C0 34.3789 1.63559 36 3.63465 36H6.05775C6.39698 36 6.73622 35.952 7.05122 35.8559C5.7064 34.7512 4.8462 33.0821 4.8462 31.2208V24.016C4.8462 22.1428 5.71852 20.4616 7.08757 19.3689ZM35.3579 21.8149C35.2089 21.6096 35.0417 21.4163 34.8454 21.2482C34.6031 21.038 34.3269 20.8579 34.0203 20.7138C33.4872 20.4736 32.9057 20.3896 32.3314 20.4436C32.1303 20.4628 31.9352 20.5193 31.739 20.5709C31.3731 20.667 31.0157 20.7991 30.6886 21.002L25.9732 24.0797L24.231 25.2168L21.8176 26.8115C21.0216 27.3374 20.0863 27.6184 19.1292 27.6184H15.7502C15.0838 27.6184 14.5386 27.0781 14.5386 26.4176C14.5386 25.7572 15.0838 25.2168 15.7502 25.2168H19.3848C20.7175 25.2168 21.8079 24.1361 21.8079 22.8152C21.8079 21.5147 20.749 20.452 19.4442 20.4196C19.4236 20.4196 19.4054 20.4136 19.3848 20.4136H10.904C10.8749 20.4136 10.8482 20.4232 10.8191 20.4244C10.5623 20.4304 10.3127 20.464 10.0716 20.5193C9.96136 20.5445 9.85838 20.5829 9.75298 20.6177C9.60153 20.6682 9.45494 20.7246 9.31319 20.7943C9.25261 20.8231 9.18234 20.8375 9.12418 20.8699C9.04665 20.9143 8.97395 20.9672 8.90005 21.0164C8.8843 21.0272 8.86855 21.0368 8.85401 21.0464C8.67228 21.1713 8.50024 21.3082 8.34516 21.4631C8.33183 21.4763 8.32093 21.4907 8.3076 21.5051C8.17675 21.6384 8.05923 21.7825 7.95019 21.9338C7.91748 21.9795 7.88598 22.0239 7.85569 22.0707C7.74544 22.24 7.64488 22.4165 7.56371 22.6039C7.55523 22.6243 7.54917 22.6459 7.54069 22.6663C7.46921 22.8404 7.41469 23.0217 7.37107 23.2079C7.35896 23.2619 7.34684 23.3159 7.33715 23.37C7.29838 23.5801 7.27172 23.7939 7.27172 24.0148V31.222V31.2268C7.27172 31.4466 7.29838 31.6591 7.33715 31.868C7.34684 31.9221 7.35774 31.9749 7.36986 32.0278C7.4159 32.2295 7.47405 32.4264 7.55402 32.6137C7.55523 32.6173 7.55644 32.6221 7.55765 32.6258C7.64125 32.8227 7.74665 33.0064 7.86296 33.1841C7.88598 33.2201 7.91021 33.2538 7.93565 33.2886C8.05317 33.4543 8.18039 33.6104 8.32335 33.7533C8.32941 33.7593 8.33425 33.7653 8.34031 33.7713C8.48691 33.9154 8.64804 34.0439 8.81766 34.1616C8.86612 34.1952 8.9158 34.2252 8.96547 34.2564C9.01514 34.2877 9.0624 34.3237 9.11328 34.3525C9.15205 34.3741 9.19809 34.3825 9.23807 34.4029C9.42101 34.4978 9.61244 34.5746 9.81234 34.6383C9.8911 34.6623 9.965 34.6911 10.045 34.7103C10.3224 34.7776 10.6083 34.8232 10.9076 34.8232H23.3405C23.7173 34.8232 24.0844 34.7548 24.4382 34.6443C24.7253 34.5542 25.0003 34.433 25.2572 34.2744C25.4111 34.1796 25.5625 34.0787 25.703 33.961L32.3981 28.2921L35.1398 25.9721L35.3215 25.78C35.7213 25.2516 36 24.4231 36 23.7626C36 23.0386 35.7674 22.3697 35.3627 21.8137L35.3579 21.8149Z"
+                  fill="#088EED" />
+              </svg>
+            </div>
+            <h3 class="text-3xl text-black/50 ">Monthly Earnings</h3>
+            <p class="text-2xl text-black/50 ">Up to ₹15 Lakhs+</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-gray-100 rounded-xl p-6 shadow-sm flex flex-col gap-2">
+            <div class="text-blue-600 text-3xl mb-24">
+              <svg width="39" height="36" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12.9994 11.142C20.4394 11.142 25.9987 8.20079 25.9987 5.57092C25.9987 2.94129 20.4393 0 12.9994 0C5.55946 0 0.000183105 2.94129 0.000183105 5.57092C0.000183105 8.20079 5.55934 11.142 12.9994 11.142Z"
+                  fill="#088EED" />
+                <path
+                  d="M12.9993 33.4268C14.0852 33.4268 15.1304 33.3637 16.1246 33.2487C15.2866 32.1717 14.5935 30.9765 14.0743 29.693C13.7176 29.705 13.3596 29.7133 12.9992 29.7133C8.74796 29.7133 4.72199 28.8709 1.66319 27.3414C1.06091 27.0403 0.506682 26.7168 0.00012207 26.3743V27.8559C0.00012207 30.4856 5.55928 33.4268 12.9993 33.4268Z"
+                  fill="#088EED" />
+                <path
+                  d="M12.9993 25.9984C13.0374 25.9984 13.075 25.9978 13.113 25.9976C13.0368 25.3889 12.9971 24.7689 12.9971 24.1399C12.9971 23.5112 13.0367 22.8915 13.113 22.2833C13.075 22.2833 13.0373 22.2847 12.9993 22.2847C8.74809 22.2847 4.72223 21.4423 1.66331 19.9129C1.06091 19.6117 0.50656 19.2882 0 18.9458V20.4273C0.000123823 23.0571 5.55928 25.9984 12.9993 25.9984Z"
+                  fill="#088EED" />
+                <path
+                  d="M12.9993 18.57C13.3678 18.57 13.7313 18.5626 14.0903 18.5485C14.6668 17.1341 15.4547 15.8276 16.4153 14.669C15.3032 14.7916 14.1601 14.8566 12.9993 14.8566C8.74809 14.8566 4.72223 14.0142 1.66331 12.4848C1.06091 12.1835 0.50656 11.8601 0 11.5176V12.9992C0.000123823 15.629 5.55928 18.57 12.9993 18.57Z"
+                  fill="#088EED" />
+                <path
+                  d="M18.5713 17.9841C17.7677 19.1922 17.1936 20.5653 16.9111 22.0407C16.7807 22.7209 16.7119 23.4226 16.7119 24.1402C16.7119 24.6797 16.7513 25.2101 16.8257 25.7293C17.0086 27.0048 17.4081 28.2108 17.9859 29.3095C18.5921 30.4624 19.3941 31.497 20.3479 32.3681C22.3301 34.1785 24.9663 35.2842 27.8559 35.2842C34.0008 35.2842 39 30.285 39 24.1402C39 17.9952 34.0008 12.9961 27.8559 12.9961C27.2209 12.9961 26.5982 13.0503 25.9917 13.1529C22.9025 13.6753 20.2418 15.473 18.5713 17.9841Z"
+                  fill="#088EED" />
+              </svg>
+            </div>
+            <h3 class="text-3xl text-black/50 ">Gross Margins</h3>
+            <p class="text-2xl text-black/50 ">20%–35%</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bg-gray-100 rounded-xl p-6 shadow-sm flex flex-col gap-2">
+            <div class="text-blue-600 text-3xl mb-24">
+              <svg width="31" height="38" viewBox="0 0 31 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M26.7685 11.0736L28.9958 8.84623L26.8041 6.65376L24.4214 9.0365C22.2447 7.49392 19.7046 6.54321 17.05 6.2775V3.1H20.15V0H10.85V3.1H13.95V6.2775C11.2954 6.54321 8.7553 7.49392 6.57859 9.0365L4.19586 6.65376L2.00416 8.84623L4.23151 11.0736C2.15241 13.2749 0.763601 16.037 0.236588 19.0187C-0.290425 22.0004 0.0674395 25.0712 1.26599 27.8518C2.46454 30.6324 4.45127 33.0011 6.98085 34.6654C9.51043 36.3296 12.4721 37.2164 15.5 37.2164C18.5279 37.2164 21.4896 36.3296 24.0191 34.6654C26.5487 33.0011 28.5355 30.6324 29.734 27.8518C30.9326 25.0712 31.2904 22.0004 30.7634 19.0187C30.2364 16.037 28.8476 13.2749 26.7685 11.0736ZM15.5 34.1C13.0475 34.1 10.6501 33.3727 8.61093 32.0102C6.57176 30.6477 4.98243 28.7111 4.0439 26.4453C3.10537 24.1795 2.85981 21.6862 3.33827 19.2809C3.81673 16.8755 4.99771 14.666 6.73188 12.9319C8.46605 11.1977 10.6755 10.0167 13.0809 9.53826C15.4862 9.0598 17.9795 9.30536 20.2453 10.2439C22.5111 11.1824 24.4477 12.7718 25.8102 14.8109C27.1727 16.8501 27.9 19.2475 27.9 21.7C27.8963 24.9875 26.5887 28.1394 24.264 30.464C21.9394 32.7887 18.7875 34.0963 15.5 34.1Z"
+                  fill="#088EED" />
+                <path
+                  d="M15.5 12.3999V21.6999H6.20001C6.20001 23.5393 6.74545 25.3373 7.76734 26.8667C8.78924 28.3961 10.2417 29.5881 11.9411 30.292C13.6404 30.9959 15.5103 31.18 17.3143 30.8212C19.1184 30.4624 20.7755 29.5766 22.0761 28.276C23.3767 26.9754 24.2625 25.3183 24.6213 23.5142C24.9801 21.7102 24.796 19.8403 24.0921 18.1409C23.3882 16.4416 22.1962 14.9891 20.6668 13.9672C19.1374 12.9453 17.3394 12.3999 15.5 12.3999Z"
+                  fill="#088EED" />
+              </svg>
+            </div>
+            <h3 class="text-3xl text-black/50 ">Breakeven</h3>
+            <p class="text-2xl text-black/50 ">10–20 Months</p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="bg-gray-100 rounded-xl p-6 shadow-sm flex flex-col gap-2">
+            <div class="text-blue-600 text-3xl mb-24">
+              <svg width="32" height="37" viewBox="0 0 32 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.31167 18.631C14.4531 18.631 18.6233 14.4608 18.6233 9.31937C18.6233 4.17792 14.4531 0 9.31167 0C4.17021 0 0 4.17021 0 9.31167C0 14.4531 4.17021 18.631 9.31167 18.631ZM6.05875 12.9962C6.14354 12.6879 6.22833 12.3873 6.32083 12.079C6.42875 11.7244 6.52896 11.6858 6.85271 11.8554C7.40771 12.1406 7.99354 12.3025 8.61021 12.3796C9.00333 12.4258 9.39646 12.3873 9.75875 12.2254C10.4448 11.9248 10.5527 11.1308 9.97458 10.6529C9.77417 10.491 9.55062 10.3677 9.31937 10.2675C8.71812 10.0054 8.09375 9.805 7.52333 9.46583C6.60604 8.91854 6.02021 8.15542 6.08958 7.03771C6.16667 5.77354 6.88354 4.97958 8.03979 4.56333C8.51771 4.38604 8.51771 4.39375 8.52542 3.89271C8.52542 3.72312 8.52542 3.55354 8.52542 3.38396C8.53312 3.00625 8.6025 2.94458 8.9725 2.92917C9.08812 2.92917 9.20375 2.92917 9.31937 2.92917C10.121 2.92917 10.121 2.92917 10.121 3.73083C10.121 4.29354 10.121 4.30125 10.6837 4.38604C11.1154 4.45542 11.524 4.57875 11.9248 4.75604C12.1483 4.85625 12.2254 5.01042 12.1637 5.24167C12.0635 5.58854 11.971 5.93542 11.8554 6.27458C11.7475 6.59833 11.6473 6.64458 11.339 6.49812C10.7146 6.1975 10.0594 6.06646 9.36562 6.105C9.18062 6.11271 9.01104 6.13583 8.84146 6.21292C8.24792 6.475 8.14771 7.13021 8.65646 7.53875C8.91083 7.74687 9.20375 7.89333 9.51208 8.01667C10.0362 8.2325 10.5681 8.44833 11.0769 8.72583C12.6725 9.61229 13.1042 11.6165 11.9787 12.9808C11.5702 13.4742 11.046 13.8056 10.4217 13.9752C10.1519 14.0523 10.0285 14.191 10.044 14.4685C10.0594 14.746 10.044 15.0158 10.044 15.2933C10.044 15.54 9.92062 15.671 9.67396 15.6787C9.38104 15.6865 9.08042 15.6865 8.7875 15.6787C8.52542 15.671 8.40208 15.5246 8.40208 15.2702C8.40208 15.0698 8.40208 14.8694 8.39437 14.669C8.38667 14.2296 8.37896 14.2065 7.94729 14.1371C7.4 14.0523 6.86812 13.929 6.36708 13.6823C5.98937 13.505 5.95083 13.4048 6.05875 12.9962Z"
+                  fill="#088EED" />
+                <path
+                  d="M30.2013 19.4095H29.1144C28.3975 17.2126 26.9946 15.2624 25.1215 13.7515C25.1215 13.6822 25.106 13.6051 25.0906 13.5357C24.6975 12.1559 25.1831 10.8995 25.7458 9.99758C26.139 9.3655 25.6302 8.55613 24.8902 8.64863C23.2329 8.85675 22.0921 9.46571 21.3058 10.1518C20.7663 10.622 20.3808 11.254 20.2113 11.9555C19.0242 16.8734 14.5919 20.5349 9.31168 20.5349C6.7448 20.5349 4.38605 19.6715 2.49751 18.2224C1.8423 19.6407 1.48772 21.1901 1.48772 22.8165C1.48772 23.6953 1.59563 24.5509 1.79605 25.3757C1.79605 25.3757 1.79605 25.3911 1.80376 25.4142C2.01188 26.2699 2.32793 27.0947 2.72876 27.8732C3.26063 29.0217 4.03147 30.363 5.09522 31.4499C6.62918 33.0301 6.89126 34.988 6.9298 35.8359V36.1982C6.9298 36.2136 6.9298 36.229 6.9298 36.2445C6.9298 36.2522 6.9298 36.2522 6.9298 36.2522C6.96063 36.6684 7.30751 36.9999 7.73147 36.9999H12.6031C13.0425 36.9999 13.4048 36.6453 13.4048 36.1982V34.9957C14.114 35.0882 14.8385 35.1422 15.5708 35.1422C16.149 35.1422 16.7117 35.1113 17.2744 35.0497V36.1982C17.2744 36.6376 17.629 36.9999 18.076 36.9999H22.9631C23.4025 36.9999 23.7648 36.6453 23.7648 36.1982V34.9957C23.7725 34.5949 23.9113 32.9992 25.4221 31.6349C25.476 31.5886 25.53 31.5424 25.584 31.4961C25.5994 31.4807 25.6148 31.473 25.6302 31.4576C27.3106 29.9622 28.5517 28.0967 29.1915 26.0155H30.2167C31.0338 26.0155 31.6967 25.3526 31.6967 24.5355V20.8895C31.6813 20.0724 31.0183 19.4095 30.2013 19.4095ZM24.104 19.6715C23.4333 19.6715 22.8938 19.132 22.8938 18.4613C22.8938 17.7907 23.4333 17.2511 24.104 17.2511C24.7746 17.2511 25.3142 17.7907 25.3142 18.4613C25.3142 19.132 24.7746 19.6715 24.104 19.6715Z"
+                  fill="#088EED" />
+              </svg>
+            </div>
+            <h3 class="text-3xl text-black/50 ">3-Year ROI</h3>
+            <p class="text-2xl text-black/50 ">3x–5x Potential</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-[#0071CE] text-white rounded-3xl max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 items-start gap-10">
+          <!-- LEFT TEXT SIDE -->
+          <div class="pt-10 px-6 md:pt-[61px] md:px-9">
+            <div class="mb-20">
+              <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M45.3125 43.75V26.1572C44.2626 26.5495 43.1554 26.7666 42.0352 26.7998C41.9199 26.7998 41.8105 26.8047 41.7031 26.8047C39.743 26.81 37.8201 26.2689 36.1504 25.2422C34.4809 26.2687 32.5584 26.8098 30.5986 26.8047C28.6469 26.8073 26.734 26.259 25.0801 25.2227C23.4031 26.263 21.4676 26.8111 19.4941 26.8047C17.529 26.8073 15.6035 26.2512 13.9424 25.2012C12.2812 26.2512 10.3558 26.8073 8.39062 26.8047C8.28418 26.8047 8.17676 26.8047 8.06152 26.7998H8.05566C6.90274 26.7656 5.76394 26.5364 4.6875 26.1221V43.75H1.5625V46.875H48.4375V43.75H45.3125ZM21.875 37.5H12.5V30.0781C12.5 29.9745 12.5412 29.8752 12.6144 29.8019C12.6877 29.7287 12.787 29.6875 12.8906 29.6875H21.4844C21.588 29.6875 21.6873 29.7287 21.7606 29.8019C21.8338 29.8752 21.875 29.9745 21.875 30.0781V37.5ZM37.5 43.75H29.6875V30.0781C29.6875 29.9745 29.7287 29.8752 29.8019 29.8019C29.8752 29.7287 29.9745 29.6875 30.0781 29.6875H37.1094C37.213 29.6875 37.3123 29.7287 37.3856 29.8019C37.4588 29.8752 37.5 29.9745 37.5 30.0781V43.75Z"
+                  fill="white" />
+                <path
+                  d="M48.1026 16.6289L43.544 6.25C42.1875 3.125 42.1875 3.125 39.0625 3.125H10.9375C7.81252 3.125 7.81252 3.125 6.45119 6.25L1.8926 16.6289C1.01369 18.5244 2.17483 20.4707 2.1758 20.4717L2.21584 20.5361C2.25686 20.6006 2.32619 20.707 2.37405 20.7676C2.38381 20.7803 2.3926 20.7939 2.40139 20.8066L2.91311 21.4307L3.43166 21.9326L3.47268 21.9678C3.76099 22.2138 4.06935 22.4352 4.39455 22.6299V22.6348C5.45736 23.2786 6.66821 23.6375 7.91018 23.6768H8.15139C10.0306 23.6803 11.8413 22.9715 13.2188 21.6934C13.4177 21.509 13.6058 21.3134 13.7823 21.1074C13.9593 21.3132 14.1477 21.5088 14.3467 21.6934C15.7242 22.9715 17.5349 23.6803 19.4141 23.6768C21.6875 23.6768 23.7178 22.7002 25.042 21.1807C25.044 21.1788 25.0466 21.1778 25.0493 21.1778C25.0521 21.1778 25.0547 21.1788 25.0567 21.1807L25.6094 21.6943C26.9872 22.9727 28.7983 23.6814 30.6778 23.6777C32.9522 23.6777 34.9854 22.7012 36.3086 21.1768C37.6328 22.7012 39.6651 23.6777 41.9405 23.6777H42.1836C43.3944 23.6325 44.5725 23.2724 45.6016 22.6328C45.6944 22.5771 45.7832 22.5186 45.8731 22.46C46.5672 21.9918 47.1713 21.4023 47.6563 20.7197L47.8516 20.4268C47.9395 20.2275 48.9463 18.4443 48.1026 16.6289Z"
+                  fill="white" />
+              </svg>
+            </div>
+            <h2 class="text-4xl md:text-6xl leading-tight mb-3.5">
+              30 Master <br />
+              Franchise Territories
+            </h2>
+            <p class="text-[40px] mb-14" style="
+            font-weight: 400;
+            line-height: 51px;
+            /* or 128% */
+            letter-spacing: -0.09em;
+            
+            color: rgba(255, 255, 255, 0.5);
+            
+            ">
+              Each region gets<br /> exclusive rights to retail,<br /> distribution &
+              service.
+            </p>
+            <div class="flex flex-col md:flex-row gap-9">
+              <p class="" style="
+              font-weight: 400;
+              font-size: 20px;
+              line-height: 28px;
+              /* or 140% */
+              letter-spacing: -0.09em;
+              
+              color: #FFFFFF;
+              
+              opacity: 0.5;
+              ">
+                Franchise slots filling fast, <br />
+                apply now to block your state.
+              </p>
+              <button
+                class="bg-white text-2xl text-[#0B2131]  px-5 py-2.5 rounded-[10px] shadow-md hover:bg-gray-100 transition">
+                Apply Now
+              </button>
+            </div>
+          </div>
+
+          <!-- RIGHT IMAGE SIDE -->
+          <div class="w-full h-full relative">
+            <img src="./public/assets/india-bg.jpg" alt="India Franchise Map"
+              class="w-full md:h-[651px] rounded-xl shadow-lg" />
+            <button
+              class="absolute bottom-7 right-10 bg-[#006BB7] text-2xl text-white  px-5 py-2.5 rounded-[10px] shadow-md hover:bg-gray-100 transition">
+              Franchise
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="min-h-screen bg-white font-inter">
+    <div class="relative px-4 md:px-8 lg:px-[76px] pt-8 md:pt-16 lg:pt-[120px]">
+      <div class="max-w-[1440px] mx-auto">
+        <!-- Header Section -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-16 w-full">
+          <h1
+            class="text-4xl md:text-5xl lg:text-[60px] font-normal leading-[1.2] tracking-[-0.09em] text-black max-w-[390px] relative z-10">
+            What Makes the<br />
+            Brand Special?
+          </h1>
+          <p
+            class="text-base md:text-lg lg:text-[20px] font-normal leading-normal tracking-[-0.09em] text-black/50 max-w-[297px] mt-8 lg:mt-0">
+            Daewoo Korea: Legendary Innovation,<br />
+            Trusted Since 1967
+          </p>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex flex-col lg:flex-row gap-8 lg:gap-[79px]">
+          <!-- Product Image -->
+          <div class="flex-shrink-0 w-full lg:w-[525px]">
+            <img
+              src="https://api.builder.io/api/v1/image/assets/TEMP/c13283123c07af3b7c8bc2de6b0f3cc91ac24fdb?width=1050"
+              alt="Daewoo product" class="w-full h-auto lg:w-[525px] lg:h-full object-cover rounded-[20px]" />
+          </div>
+
+          <!-- Features List -->
+          <div class="flex-1 w-full lg:w-[684px]">
+            <!-- Feature 1 (active) -->
+            <div class="relative">
+              <h2
+                class="text-2xl md:text-3xl lg:text-[40px] font-normal leading-normal tracking-[-0.09em] text-black mb-3 lg:mb-[14px]">
+                Korean Research and Development
+              </h2>
+              <p
+                class="text-lg md:text-xl lg:text-[24px] font-normal leading-normal tracking-[-0.09em] text-black/50 mb-6 lg:mb-[24px]">
+                Energy-efficient, AI-enabled smart products
+              </p>
+              <div class="w-full h-[1px] bg-black mb-6 lg:mb-[25px]"></div>
+            </div>
+
+            <!-- Feature 2 (inactive) -->
+            <div class="relative">
+              <h2
+                class="text-2xl md:text-3xl lg:text-[40px] font-normal leading-normal tracking-[-0.09em] text-black mb-3 lg:mb-[14px] opacity-50">
+                Global Quality
+              </h2>
+              <p
+                class="text-lg md:text-xl lg:text-[24px] font-normal leading-normal tracking-[-0.09em] text-black/50 mb-6 lg:mb-[24px] opacity-50">
+                CE, ISO, BIS certified
+              </p>
+              <div class="w-full h-[1px] bg-black mb-6 lg:mb-[25px] opacity-50"></div>
+            </div>
+
+            <!-- Feature 3 (inactive) -->
+            <div class="relative">
+              <h2
+                class="text-2xl md:text-3xl lg:text-[40px] font-normal leading-normal tracking-[-0.09em] text-black mb-3 lg:mb-[14px] opacity-50">
+                Modern Aesthetics
+              </h2>
+              <p
+                class="text-lg md:text-xl lg:text-[24px] font-normal leading-normal tracking-[-0.09em] text-black/50 mb-6 lg:mb-[24px] opacity-50">
+                Sleek, aspirational, youth-focused
+              </p>
+              <div class="w-full h-[1px] bg-black mb-6 lg:mb-[25px] opacity-50"></div>
+            </div>
+
+            <!-- Feature 4 (inactive) -->
+            <div class="relative">
+              <h2
+                class="text-2xl md:text-3xl lg:text-[40px] font-normal leading-normal tracking-[-0.09em] text-black mb-3 lg:mb-[14px] opacity-50">
+                Tech-Supported Services
+              </h2>
+              <p
+                class="text-lg md:text-xl lg:text-[24px] font-normal leading-normal tracking-[-0.09em] text-black/50 mb-6 lg:mb-[24px] opacity-50">
+                App, IoT, OTA updates
+              </p>
+              <div class="w-full h-[1px] bg-black mb-6 lg:mb-[25px] opacity-50"></div>
+            </div>
+
+            <!-- Feature 5 (inactive, last – no separator) -->
+            <div class="relative">
+              <h2
+                class="text-2xl md:text-3xl lg:text-[40px] font-normal leading-normal tracking-[-0.09em] text-black mb-3 lg:mb-[14px] opacity-50">
+                5‑Year Warranty Models
+              </h2>
+              <p
+                class="text-lg md:text-xl lg:text-[24px] font-normal leading-normal tracking-[-0.09em] text-black/50 mb-6 lg:mb-[24px] opacity-50">
+                Assured trust & durability
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <!-- Investment Details Section -->
+    <div class="relative px-4 md:px-8 lg:px-[31px] mt-16 md:mt-24 lg:mt-32">
+      <div class="max-w-[1378px] mx-auto">
+        <div class="relative bg-[#0B2131] rounded-[20px] overflow-hidden">
+          <!-- Background overlay image -->
+          <div class="absolute right-0 top-0 w-[1159px] h-[894px] rounded-[20px] bg-[#0B2131]">
+            <img
+              src="https://api.builder.io/api/v1/image/assets/TEMP/e529ed6bc85c1571b08bc73a4a8e2da9c0149dce?width=3066"
+              alt=""
+              class="absolute -right-[39px] -top-[29px] w-[1533px] h-[1022px] object-cover mix-blend-luminosity opacity-30" />
+          </div>
+
+          <!-- Content -->
+          <div class="relative z-10 p-8 lg:p-12">
+            <!-- Header -->
+            <h2
+              class="text-4xl md:text-5xl lg:text-[60px] font-normal leading-normal tracking-[-0.09em] text-white mb-12 lg:mb-[44px] max-w-[464px]">
+              Investment Details
+            </h2>
+
+            <div class="flex flex-col lg:flex-row gap-8 lg:gap-16">
+              <!-- Left side: Investment cards & details -->
+              <div class="flex-1 max-w-[585px]">
+                <!-- Initial Investment -->
+                <div class="bg-[#006BB7] rounded-[10px] p-6 lg:p-8 mb-4 lg:mb-[13px]">
+                  <p
+                    class="text-2xl md:text-3xl lg:text-[34px] font-normal leading-normal tracking-[-0.09em] text-white">
+                    Initial Investment: Starting at ₹1.5 Crores
+                  </p>
+                </div>
+
+                <!-- Breakeven Period -->
+                <div class="bg-[#006BB7] rounded-[10px] p-6 lg:p-8 mb-4 lg:mb-[13px]">
+                  <p
+                    class="text-2xl md:text-3xl lg:text-[34px] font-normal leading-normal tracking-[-0.09em] text-white">
+                    Breakeven Period: 15–25 months
+                  </p>
+                </div>
+
+                <!-- Tenure -->
+                <div class="bg-[#006BB7] rounded-[10px] p-6 lg:p-8 mb-8 lg:mb-[71px]">
+                  <p
+                    class="text-2xl md:text-3xl lg:text-[34px] font-normal leading-normal tracking-[-0.09em] text-white mb-4 lg:mb-[12px]">
+                    Tenure: Minimum 5 Years
+                  </p>
+                  <p
+                    class="text-lg md:text-xl lg:text-[20px] font-normal leading-normal tracking-[-0.09em] text-white/50 max-w-[460px]">
+                    Includes renewable contract options with updated<br />
+                    market-aligned benefits and performance-linked upgrades.
+                  </p>
+                </div>
+
+                <!-- Expected Monthly Profit -->
+                <h3
+                  class=" md:w-max text-2xl md:text-3xl lg:text-[34px] font-normal leading-normal tracking-[-0.09em] text-white mb-6 lg:mb-[36px] max-w-[640px]">
+                  Expected Monthly Profit, Up to ₹15 Lakhs/month
+                </h3>
+
+                <!-- Performance depends on -->
+                <p
+                  class="text-lg md:text-xl lg:text-[20px] font-normal leading-normal tracking-[-0.09em] text-white/50 mb-6 lg:mb-[36px]">
+                  Performance depends on:
+                </p>
+
+                <!-- Tags -->
+                <div class="flex flex-wrap gap-3 lg:gap-4 md:w-max">
+                  <div class="bg-[#253B47] rounded-[10px] px-4 py-3">
+                    <span
+                      class="text-lg md:text-xl lg:text-[20px] font-normal leading-normal tracking-[-0.09em] text-white/50">
+                      Territory potential
+                    </span>
+                  </div>
+                  <div class="bg-[#253B47] rounded-[10px] px-4 py-3">
+                    <span
+                      class="text-lg md:text-xl lg:text-[20px] font-normal leading-normal tracking-[-0.09em] text-white/50">
+                      Local marketing efforts
+                    </span>
+                  </div>
+                  <div class="bg-[#253B47] rounded-[10px] px-4 py-3">
+                    <span
+                      class="text-lg md:text-xl lg:text-[20px] font-normal leading-normal tracking-[-0.09em] text-white/50">
+                      Product mix & sales volumes
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right side: Arrow graphic -->
+              <div class="flex items-center justify-center lg:justify-end flex-1">
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/385a86aa4ea55d1fea26bd7c015a2d6914e0344f?width=1100"
+                  alt="Growth arrow" class="w-full max-w-[350px] lg:max-w-[550px] h-auto lg:h-[380px] object-contain" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Master Franchise Partner Benefits Section -->
+    <div class="relative px-4 md:px-8 lg:px-[76px] mt-16 md:mt-24 lg:mt-32">
+      <div class=" mx-auto">
+        <div class="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center">
+          <!-- Image -->
+          <div class="flex-shrink-0 w-full lg:w-1/2 relative">
+            <img src="./public/assets/money-plant.png" alt="Growth investment concept"
+              class="w-full h-auto lg:w-full lg:h-[676px] object-cover" />
+            <!-- Slider indicators -->
+            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2  lg:transform-none">
+              <div class="flex gap-1">
+                <div class="w-11 h-[3px] bg-white"></div>
+                <div class="w-11 h-[3px] bg-white/50"></div>
+                <div class="w-11 h-[3px] bg-white/50"></div>
+                <div class="w-11 h-[3px] bg-white/50"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Content -->
+          <div class="flex-1 md:w-1/2 lg:w-auto">
+            <h2
+              class="text-4xl md:text-5xl lg:text-[60px] font-normal leading-[1.2] tracking-[-0.09em] text-black mb-8 lg:mb-[30px] max-w-[409px]">
+              Master Franchise<br />
+              Partner Benefits
+            </h2>
+            <div
+              class="space-y-6 lg:space-y-8 text-lg md:text-xl lg:text-[24px] font-normal leading-[25px] tracking-[-0.09em] text-black/50 max-w-[581px]">
+              <p>
+                • Full operational support – Product supply, ERP, design,
+                hiring
+              </p>
+              <p>
+                • Complete marketing & digital presence – National campaigns
+              </p>
+              <p>• Price control & channel margins</p>
+              <p>• App-based CRM + Inventory</p>
+              <p>
+                • Expansion rights: Appoint district/sub-dealers under you
+              </p>
+              <p>• Annual Global Franchise Meet (Korea)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <!-- FAQ Section -->
+    <div class="relative px-4 md:px-8 lg:px-[76px] mt-16 md:mt-24 lg:mt-32 pb-16 md:pb-24 lg:pb-32">
+      <div class="max-w-[1288px] mx-auto">
+        <!-- Header -->
+        <div class="mb-12 lg:mb-[49px]">
+          <h2
+            class="text-5xl md:text-6xl lg:text-[80px] font-normal leading-[52px] tracking-[-0.09em] text-black mb-6 lg:mb-[49px]">
+            FAQ
+          </h2>
+          <p
+            class="text-lg md:text-xl lg:text-[24px] font-normal leading-[35px] tracking-[-0.09em] text-black/50 max-w-[594px]">
+            Got questions? Find clear answers to the most common queries<br />
+            in our Frequently Asked Questions section.
+          </p>
+        </div>
+
+        <!-- FAQ Items -->
+        <div class="space-y-0">
+          <!-- Separator line -->
+          <div class="w-full h-[1px] bg-black mb-6 lg:mb-[26px]"></div>
+
+          <!-- FAQ Item 1 -->
+          <div class="flex items-center justify-between py-6 lg:py-[26px] border-b border-black">
+            <div class="flex items-center gap-6 lg:gap-[159px]">
+              <span
+                class="text-2xl md:text-3xl lg:text-[40px] font-normal leading-[52px] tracking-[-0.09em] text-black">
+                01
+              </span>
+              <h3
+                class="text-2xl md:text-3xl lg:text-[40px] font-normal leading-[52px] tracking-[-0.09em] text-black max-w-[673px]">
+                What is the Daewoo franchise opportunity?
+              </h3>
+            </div>
+            <button
+              class="text-2xl md:text-3xl lg:text-[40px] font-normal leading-[52px] tracking-[-0.09em] text-black hover:opacity-70 transition-opacity">
+              +
+            </button>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="flex items-center justify-between py-6 lg:py-[26px] border-b border-black">
+            <div class="flex items-center gap-6 lg:gap-[153px]">
+              <span
+                class="text-2xl md:text-3xl lg:text-[40px] font-normal leading-[52px] tracking-[-0.09em] text-black">
+                02
+              </span>
+              <h3
+                class="text-2xl md:text-3xl lg:text-[40px] font-normal leading-[52px] tracking-[-0.09em] text-black max-w-[510px]">
+                Do I get exclusive territory rights?
+              </h3>
+            </div>
+            <button
+              class="text-2xl md:text-3xl lg:text-[40px] font-normal leading-[52px] tracking-[-0.09em] text-black hover:opacity-70 transition-opacity">
+              +
+            </button>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="flex items-center justify-between py-6 lg:py-[26px] border-b border-black">
+            <div class="flex items-center gap-6 lg:gap-[152px]">
+              <span
+                class="text-2xl md:text-3xl lg:text-[40px] font-normal leading-[52px] tracking-[-0.09em] text-black">
+                03
+              </span>
+              <h3
+                class="text-2xl md:text-3xl lg:text-[40px] font-normal leading-[52px] tracking-[-0.09em] text-black max-w-[574px]">
+                What are the average profit margins?
+              </h3>
+            </div>
+            <button
+              class="text-2xl md:text-3xl lg:text-[40px] font-normal leading-[52px] tracking-[-0.09em] text-black hover:opacity-70 transition-opacity">
+              +
+            </button>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="flex items-center justify-between py-6 lg:py-[26px] border-b border-black">
+            <div class="flex items-center gap-6 lg:gap-[151px]">
+              <span
+                class="text-2xl md:text-3xl lg:text-[40px] font-normal leading-[52px] tracking-[-0.09em] text-black">
+                04
+              </span>
+              <h3
+                class="text-2xl md:text-3xl lg:text-[40px] font-normal leading-[52px] tracking-[-0.09em] text-black max-w-[418px]">
+                How fast can I expect ROI?
+              </h3>
+            </div>
+            <button
+              class="text-2xl md:text-3xl lg:text-[40px] font-normal leading-[52px] tracking-[-0.09em] text-black hover:opacity-70 transition-opacity">
+              +
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Form Section -->
+    <div class="relative px-4 md:px-8 lg:px-[31px] pb-16 md:pb-24 lg:pb-32">
+      <div class="max-w-[1378px] mx-auto">
+        <div class="relative bg-[#071A2B] rounded-[20px] overflow-hidden">
+          <!-- Background Images with Overlay -->
+          <div class="absolute inset-0 bg-[#071A2B] rounded-[20px]">
+            <img
+              src="https://api.builder.io/api/v1/image/assets/TEMP/a949262ddbbe63f93dfb351265ed3cff1bf34d3b?width=2842"
+              alt="" class="absolute left-0 top-0 w-[1421px] h-[888px] object-cover mix-blend-overlay" />
+            <img
+              src="https://api.builder.io/api/v1/image/assets/TEMP/a949262ddbbe63f93dfb351265ed3cff1bf34d3b?width=2842"
+              alt="" class="absolute left-0 top-0 w-[1421px] h-[888px] object-cover mix-blend-overlay opacity-32" />
+          </div>
+
+          <!-- Content -->
+          <div class="relative z-10 p-8 lg:p-12">
+            <!-- Header -->
+            <h2
+              class="text-4xl md:text-5xl lg:text-[60px] font-normal leading-normal tracking-[-0.09em] text-white mb-12 lg:mb-[76px] max-w-[530px]">
+              Let's Build the Next Big<br />
+              Brand Together
+            </h2>
+
+            <!-- Form -->
+            <form class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-[109px]">
+              <!-- Left Column -->
+              <div class="space-y-8 lg:space-y-[58px]">
+                <!-- First Name -->
+                <div class="relative">
+                  <input type="text" placeholder="First Name"
+                    class="w-full bg-transparent border-0 border-b border-white/50 pb-4 text-lg md:text-xl lg:text-[24px] font-normal tracking-[-0.09em] text-white placeholder-white/50 focus:outline-none focus:border-white transition-colors" />
+                </div>
+
+                <!-- Phone Number -->
+                <div class="relative">
+                  <input type="tel" placeholder="Phone Number"
+                    class="w-full bg-transparent border-0 border-b border-white/50 pb-4 text-lg md:text-xl lg:text-[24px] font-normal tracking-[-0.09em] text-white placeholder-white/50 focus:outline-none focus:border-white transition-colors" />
+                </div>
+
+                <!-- State -->
+                <div class="relative">
+                  <select
+                    class="w-full bg-transparent border-0 border-b border-white/50 pb-4 text-lg md:text-xl lg:text-[24px] font-normal tracking-[-0.09em] text-white/50 focus:outline-none focus:border-white transition-colors appearance-none cursor-pointer">
+                    <option value="" class="bg-[#071A2B] text-white">
+                      State
+                    </option>
+                    <option value="andhra-pradesh" class="bg-[#071A2B] text-white">
+                      Andhra Pradesh
+                    </option>
+                    <option value="karnataka" class="bg-[#071A2B] text-white">
+                      Karnataka
+                    </option>
+                    <option value="tamil-nadu" class="bg-[#071A2B] text-white">
+                      Tamil Nadu
+                    </option>
+                    <option value="telangana" class="bg-[#071A2B] text-white">
+                      Telangana
+                    </option>
+                  </select>
+                  <div class="absolute right-0 bottom-4 pointer-events-none">
+                    <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.5" d="M6.5 10L0.870835 0.25L12.1292 0.250001L6.5 10Z" fill="white" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right Column -->
+              <div class="space-y-8 lg:space-y-[58px]">
+                <!-- Second Name -->
+                <div class="relative">
+                  <input type="text" placeholder="Second Name"
+                    class="w-full bg-transparent border-0 border-b border-white/50 pb-4 text-lg md:text-xl lg:text-[24px] font-normal tracking-[-0.09em] text-white placeholder-white/50 focus:outline-none focus:border-white transition-colors" />
+                </div>
+
+                <!-- Email -->
+                <div class="relative">
+                  <input type="email" placeholder="Email"
+                    class="w-full bg-transparent border-0 border-b border-white/50 pb-4 text-lg md:text-xl lg:text-[24px] font-normal tracking-[-0.09em] text-white placeholder-white/50 focus:outline-none focus:border-white transition-colors" />
+                </div>
+
+                <!-- Investment Capacity -->
+                <div class="relative">
+                  <select
+                    class="w-full bg-transparent border-0 border-b border-white/50 pb-4 text-lg md:text-xl lg:text-[24px] font-normal tracking-[-0.09em] text-white/50 focus:outline-none focus:border-white transition-colors appearance-none cursor-pointer">
+                    <option value="" class="bg-[#071A2B] text-white">
+                      Investment Capacity
+                    </option>
+                    <option value="1-2-crores" class="bg-[#071A2B] text-white">
+                      ₹1-2 Crores
+                    </option>
+                    <option value="2-5-crores" class="bg-[#071A2B] text-white">
+                      ₹2-5 Crores
+                    </option>
+                    <option value="5-10-crores" class="bg-[#071A2B] text-white">
+                      ₹5-10 Crores
+                    </option>
+                    <option value="10-plus-crores" class="bg-[#071A2B] text-white">
+                      ₹10+ Crores
+                    </option>
+                  </select>
+                  <div class="absolute right-0 bottom-4 pointer-events-none">
+                    <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.5" d="M6.5 10L0.870835 0.25L12.1292 0.250001L6.5 10Z" fill="white" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="lg:col-span-2  mb-[50px]">
+                <button type="submit"
+                  class="bg-[#006BB7] hover:bg-[#005a9e] transition-colors rounded-[10px] px-10 py-2.5 ">
+                  <span class="text-lg md:text-xl lg:text-2xl font-normal tracking-[-0.09em] text-white">
+                    Submit
+                  </span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white">
+    <div class="max-w-[1440px] mx-auto px-4 md:px-8 lg:px-[75px] py-16 lg:py-20">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-16">
+        <!-- Logo Section -->
+        <div class="lg:col-span-1">
+          <img src="./public/logo.png" alt="Daewoo Logo" class="w-[179px] h-8 mb-8" />
+        </div>
+
+        <!-- Contact Information -->
+        <div class="lg:col-span-1">
+          <h3
+            class="text-2xl md:text-3xl lg:text-[34px] font-normal leading-normal tracking-[-0.09em] text-white mb-8 lg:mb-10">
+            Reach Out
+          </h3>
+          <div class="space-y-4 lg:space-y-6">
+            <p class="text-lg md:text-xl lg:text-[20px] font-normal leading-normal tracking-[-0.09em] text-white">
+              +91- 75084 56467
+            </p>
+            <p class="text-lg md:text-xl lg:text-[20px] font-normal leading-normal tracking-[-0.09em] text-white">
+              www.ebgdaewoo.in
+            </p>
+            <p class="text-lg md:text-xl lg:text-[20px] font-normal leading-normal tracking-[-0.09em] text-white">
+              invest@ebgdaewoo.in
+            </p>
+            <p
+              class="text-lg md:text-xl lg:text-[20px] font-normal leading-normal tracking-[-0.09em] text-white max-w-[280px]">
+              EBG Daewoo India
+              <br />
+              Head Quaters – Gurugram, Haryana
+            </p>
+          </div>
+        </div>
+
+        <!-- Apply Now Section -->
+        <div class="lg:col-span-1">
+          <h3
+            class="text-2xl md:text-3xl lg:text-[34px] font-normal leading-normal tracking-[-0.09em] text-white mb-7 lg:mb-10 max-w-[298px]">
+            Apply now to lock
+            <br />
+            your state: First-come,
+            <br />
+            first-serve basis.
+          </h3>
+          <button class="bg-[#006BB7] hover:bg-[#005a9e] transition-colors rounded-[10px] px-10 py-2.5 ">
+            <span class="text-lg md:text-xl lg:text-[24px] font-normal tracking-[-0.09em] text-white ">
+              Apply Now
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Separator Lines -->
+      <div class="w-full h-[1px] bg-white/50 my-8 lg:my-12"></div>
+
+      <!-- Bottom Section -->
+      <div class="flex flex-col lg:flex-row justify-between items-center gap-6 lg:gap-8">
+        <!-- Legal Links -->
+        <div class="flex flex-wrap gap-4 lg:gap-8">
+          <p class="text-lg md:text-xl lg:text-[20px] font-normal leading-normal tracking-[-0.09em] text-white">
+            Copyright Daewoo India
+          </p>
+          <button
+            class="text-lg md:text-xl lg:text-[20px] font-normal leading-normal tracking-[-0.09em] text-white hover:opacity-70 transition-opacity">
+            Privacy Policy
+          </button>
+          <button
+            class="text-lg md:text-xl lg:text-[20px] font-normal leading-normal tracking-[-0.09em] text-white hover:opacity-70 transition-opacity">
+            Terms and Conditions
+          </button>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="flex gap-4">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M9.69235 6.1377C7.73062 6.1377 6.13721 7.73111 6.13721 9.69283C6.13721 11.6546 7.73062 13.2518 9.69235 13.2518C11.6541 13.2518 13.2514 11.6546 13.2514 9.69283C13.2514 7.73111 11.6541 6.1377 9.69235 6.1377Z"
+              fill="white" />
+            <path
+              d="M15.058 0H4.32665C1.94234 0 0 1.94234 0 4.32665V15.058C0 17.4462 1.94234 19.3846 4.32665 19.3846H15.058C17.4462 19.3846 19.3846 17.4462 19.3846 15.058V4.32665C19.3846 1.94234 17.4462 0 15.058 0ZM9.69231 15.9729C6.23022 15.9729 3.41169 13.1544 3.41169 9.69231C3.41169 6.23022 6.23022 3.41557 9.69231 3.41557C13.1544 3.41557 15.9729 6.23022 15.9729 9.69231C15.9729 13.1544 13.1544 15.9729 9.69231 15.9729ZM16.1047 4.55538C15.372 4.55538 14.775 3.96222 14.775 3.22948C14.775 2.49674 15.372 1.89969 16.1047 1.89969C16.8375 1.89969 17.4345 2.49674 17.4345 3.22948C17.4345 3.96222 16.8375 4.55538 16.1047 4.55538Z"
+              fill="white" />
+          </svg>
+
+          <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M17.6723 0.114258H3.39197C2.74534 0.114258 2.1252 0.371129 1.66796 0.828363C1.21073 1.2856 0.953857 1.90574 0.953857 2.55237V16.8327C0.953857 17.4793 1.21073 18.0995 1.66796 18.5567C2.1252 19.0139 2.74534 19.2708 3.39197 19.2708H10.3872V11.3001H8.79303V8.11186H10.374V6.67103C10.374 5.36699 10.9952 3.32969 13.7289 3.32969L16.1916 3.33957V6.07117H14.4032C14.1124 6.07117 13.6986 6.21597 13.6986 6.83708V8.11208H16.2323L15.9415 11.3003H13.5754V19.2708H17.6723C17.9925 19.2708 18.3095 19.2078 18.6053 19.0852C18.9011 18.9627 19.1699 18.7831 19.3963 18.5567C19.6227 18.3303 19.8023 18.0615 19.9248 17.7657C20.0474 17.4699 20.1104 17.1529 20.1104 16.8327V2.55237C20.1104 2.23219 20.0474 1.91515 19.9248 1.61934C19.8023 1.32354 19.6227 1.05476 19.3963 0.828363C19.1699 0.601964 18.9011 0.422374 18.6053 0.299848C18.3095 0.177321 17.9925 0.114258 17.6723 0.114258Z"
+              fill="white" />
+          </svg>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M17.338 0.114258H3.40596C2.71315 0.114258 2.04871 0.389477 1.55881 0.879371C1.06892 1.36926 0.793701 2.0337 0.793701 2.72652L0.793701 16.6586C0.793701 17.3514 1.06892 18.0158 1.55881 18.5057C2.04871 18.9956 2.71315 19.2708 3.40596 19.2708H17.338C18.0308 19.2708 18.6953 18.9956 19.1852 18.5057C19.675 18.0158 19.9503 17.3514 19.9503 16.6586V2.72652C19.9503 2.0337 19.675 1.36926 19.1852 0.879371C18.6953 0.389477 18.0308 0.114258 17.338 0.114258ZM7.32435 15.2741C7.32449 15.3272 7.31415 15.3798 7.29392 15.4289C7.27369 15.478 7.24397 15.5227 7.20646 15.5603C7.16895 15.5979 7.12438 15.6278 7.07532 15.6481C7.02626 15.6685 6.97366 15.679 6.92054 15.679H5.19971C5.1465 15.6791 5.09378 15.6687 5.04459 15.6484C4.9954 15.6281 4.95071 15.5983 4.91308 15.5607C4.87545 15.5231 4.84564 15.4784 4.82534 15.4292C4.80504 15.38 4.79467 15.3273 4.79481 15.2741V8.05988C4.79481 7.95249 4.83747 7.8495 4.9134 7.77357C4.98934 7.69764 5.09232 7.65498 5.19971 7.65498H6.92054C7.02773 7.65526 7.13044 7.69805 7.20614 7.77395C7.28184 7.84986 7.32435 7.95268 7.32435 8.05988V15.2741ZM6.05958 6.97144C5.73667 6.97144 5.42101 6.87568 5.15252 6.69628C4.88403 6.51688 4.67477 6.2619 4.5512 5.96357C4.42762 5.66524 4.39529 5.33696 4.45829 5.02026C4.52128 4.70355 4.67678 4.41264 4.90511 4.18431C5.13344 3.95598 5.42436 3.80048 5.74106 3.73748C6.05777 3.67449 6.38604 3.70682 6.68437 3.83039C6.9827 3.95396 7.23769 4.16323 7.41709 4.43172C7.59649 4.70021 7.69224 5.01586 7.69224 5.33877C7.69224 5.77178 7.52023 6.18706 7.21404 6.49324C6.90786 6.79942 6.49259 6.97144 6.05958 6.97144ZM16.3192 15.3024C16.3194 15.3513 16.3098 15.3998 16.2912 15.445C16.2725 15.4902 16.2451 15.5313 16.2105 15.5659C16.1759 15.6005 16.1348 15.6279 16.0896 15.6466C16.0444 15.6652 15.9959 15.6748 15.947 15.6746H14.0966C14.0477 15.6748 13.9992 15.6652 13.954 15.6466C13.9088 15.6279 13.8677 15.6005 13.8331 15.5659C13.7985 15.5313 13.7711 15.4902 13.7524 15.445C13.7338 15.3998 13.7242 15.3513 13.7244 15.3024V11.9228C13.7244 11.4177 13.8724 9.71104 12.4041 9.71104C11.2667 9.71104 11.0348 10.8789 10.9891 11.4036V15.3067C10.9891 15.4045 10.9507 15.4984 10.882 15.568C10.8134 15.6377 10.7201 15.6775 10.6223 15.679H8.8351C8.78627 15.679 8.73792 15.6693 8.69282 15.6506C8.64771 15.6319 8.60675 15.6044 8.57227 15.5699C8.53779 15.5353 8.51047 15.4942 8.49188 15.4491C8.4733 15.4039 8.4638 15.3555 8.46394 15.3067V8.02831C8.4638 7.97948 8.4733 7.9311 8.49188 7.88594C8.51047 7.84078 8.53779 7.79974 8.57227 7.76516C8.60675 7.73058 8.64771 7.70314 8.69282 7.68442C8.73792 7.6657 8.78627 7.65606 8.8351 7.65606H10.6223C10.721 7.65606 10.8157 7.69528 10.8855 7.76509C10.9554 7.8349 10.9946 7.92959 10.9946 8.02831V8.65743C11.4169 8.02287 12.0427 7.53525 13.3783 7.53525C16.3366 7.53525 16.317 10.2977 16.317 11.815L16.3192 15.3024Z"
+              fill="white" />
+          </svg>
+          <svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M27.4362 3.1118C27.1209 1.93967 26.1965 1.01569 25.0243 0.700073C22.8827 0.114258 14.3165 0.114258 14.3165 0.114258C14.3165 0.114258 5.75058 0.114258 3.60906 0.677863C2.45937 0.993148 1.51247 1.93984 1.19711 3.1118C0.633545 5.25267 0.633545 9.69254 0.633545 9.69254C0.633545 9.69254 0.633545 14.1548 1.19711 16.2733C1.5128 17.4452 2.43683 18.3692 3.60922 18.6848C5.77313 19.2708 14.3168 19.2708 14.3168 19.2708C14.3168 19.2708 22.8827 19.2708 25.0243 18.7072C26.1967 18.3918 27.1209 17.4678 27.4365 16.2958C27.9999 14.1548 27.9999 9.71508 27.9999 9.71508C27.9999 9.71508 28.0225 5.25267 27.4362 3.1118ZM11.5892 13.7942V5.59083L18.7125 9.69254L11.5892 13.7942Z"
+              fill="white" />
+          </svg>
+        </div>
+      </div>
+
+      <!-- Final Separator -->
+      <div class="w-full h-[1px] bg-white/50 mt-8 lg:mt-12"></div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
