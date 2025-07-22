@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "daisyui";
 
 body {
   font-family: "Inter Variable", sans-serif;
@@ -17,3 +18,93 @@ p {
 .ls {
   letter-spacing: -0.09em;
 }
+
+/* Custom styles for the accordion */
+.custom-accordion {
+  border: none !important;
+  background: transparent !important;
+}
+
+.custom-accordion .collapse-title {
+  padding: 0 !important;
+  min-height: auto !important;
+}
+
+/* Hide default DaisyUI plus symbol */
+.custom-accordion .collapse-title:after {
+  display: none !important;
+}
+
+.custom-accordion .collapse-content {
+  padding: 0 !important;
+  padding-top: 1.5rem !important;
+}
+
+.custom-accordion input[type="radio"]:checked ~ .collapse-content,
+.custom-accordion input[type="checkbox"]:checked ~ .collapse-content {
+  padding-bottom: 1.5rem !important;
+}
+
+/* Custom plus/minus indicator */
+.custom-indicator {
+  transition: transform 0.2s ease;
+}
+
+.custom-accordion input:checked ~ .collapse-title .custom-indicator {
+  transform: rotate(45deg);
+}
+
+/* Ensure proper border styling */
+.faq-item {
+  border-bottom: 1px solid black;
+}
+
+/* Custom answer styling */
+.answer-text {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: #4b5563;
+  max-width: 800px;
+}
+
+@media (min-width: 1024px) {
+  .answer-text {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin-left: 199px;
+    /* Align with question text */
+  }
+}
+
+
+/* Image animation */
+.feature-image {
+  transition: opacity 0.5s ease-in-out, transform 0.3s ease;
+}
+
+.feature-item {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.feature-item:hover {
+  transform: translateX(8px);
+}
+
+.feature-item.active {
+  opacity: 1;
+}
+
+.feature-item.inactive {
+  opacity: 0.5;
+}
+
+.feature-item.inactive:hover {
+  opacity: 0.8;
+}
+
+.separator {
+  transition: opacity 0.3s ease;
+}
+
+/* Swiper JS */
