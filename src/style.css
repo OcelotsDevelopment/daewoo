@@ -5,15 +5,15 @@ body {
   font-family: "Inter Variable", sans-serif;
 }
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
 h5,
 h6,
 p {
-  /* letter-spacing: -0.09em; */
-}
+  letter-spacing: -0.09em;
+} */
 
 .ls {
   letter-spacing: -0.09em;
@@ -107,4 +107,24 @@ p {
   transition: opacity 0.3s ease;
 }
 
-/* Swiper JS */
+/* Slider JS */
+.carousel-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  width: 800%; /* 4 images × 200% for seamless loop */
+}
+
+.carousel-slide {
+  flex: 0 0 25%; /* Each slide takes 25% of track width */
+  position: relative;
+}
+
+.carousel-slide img {
+  /* width: 100%; */
+  /* height: 100%; */
+  /* object-fit: cover; */
+}
