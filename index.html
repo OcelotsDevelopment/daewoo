@@ -32,10 +32,10 @@
       class="relative z-10 w-full h-full flex flex-col lg:flex-row items-center lg:items-end justify-between px-2 sm:px-4 md:px-0 py-20 sm:py-16 md:py-20 max-w-screen-xl mx-auto">
       <!-- Left Text Content -->
       <div class="text-white w-full lg:max-w-xl mb-8 lg:mb-0 text-center lg:text-left px-2 sm:px-0">
-        <h1 class="text-3xl sm:text-3xl md:text-5xl lg:text-[80px] leading-tight mb-3 sm:mb-4 md:mb-6 ">
-          Invest in India's <br />
-          Next Tech Titan <br />
-          Master Franchise <br />
+        <h1 class="text-3xl sm:text-3xl md:text-5xl lg:text-[80px] leading-tight md:tracking-[-0.09em] mb-3 sm:mb-4 md:mb-6 ">
+          Invest in India's <br class="hidden md:block" />
+          Next Tech Titan <br class="hidden md:block" />
+          Master Franchise <br class="hidden md:block"/>
           Opportunity
         </h1>
         <p class="text-base md:text-xl lg:text-2xl text-gray-200">
@@ -47,8 +47,8 @@
       <div
         class="bg-[#088EED] backdrop-blur-md rounded-2xl  p-3 sm:p-4 md:p-8 w-full max-w-[510px] text-white shadow-xl flex flex-col gap-2 sm:gap-4">
         <h2
-          class="text-lg sm:text-2xl md:text-3xl lg:text-[40px] leading-tight mb-2 sm:mb-4 md:mb-6 text-center lg:text-left font-semibold"
-          style="font-weight: 400; letter-spacing: -0.09em;">
+          class="text-lg sm:text-2xl md:text-3xl lg:text-[40px] md:tracking-[-0.09em] leading-tight mb-2 sm:mb-4 md:mb-6 text-center lg:text-left font-semibold"
+          >
           Let's Build the Next Big <br class="hidden md:block" />
           Brand Together
         </h2>
@@ -89,44 +89,30 @@
   </section>
 
   <section class="relative">
-    <div style="
+    <!-- <div style="
       position: absolute;
       width: 100%;
       height: 900px;
       left: 0px;
       top: 0px;
-      /* background: url(./public/assets/sec-bg.jpg); */
+      background: url(./public/assets/sec-bg.jpg);
       background-position: center;
       object-fit: cover;
       background-size: cover;
       opacity: 0.41;
       transform: matrix(-1, 0, 0, 1, 0, 0);
-      "></div>
+      "></div> -->
     <div class="relative z-20">
-      <div class="flex flex-col md:flex-row justify-center items-center gap-14 md:py-[136px] mx-8 md:mx-20 pt-5 mb-5">
+      <div class="flex flex-col md:flex-row justify-center items-center gap-5 md:gap-14 md:py-[136px] mx-4 md:mx-20 pt-5 mb-5">
         <div class="md:w-[577px]">
           <img src="./public/assets/daewooModl.png" alt="" class="w-full">
         </div>
         <div class="flex flex-col gap-6 md:w-[642px]">
           <p class="text-2xl ">The Opportunity</p>
-          <h2 class="text-4xl md:text-6xl " style="
-          font-style: normal;
-          font-weight: 400;
-          font-size: 60px;
-          line-height: 73px;
-          letter-spacing: -0.09em;
-          
-          color: #000000;
-          
-          ">
+          <h2 class="text-4xl md:text-6xl md:leading-[73px] md:tracking-[-0.09em] ">
             Partner with a Global Trusted Brand in Over 160+ Countries
           </h2>
-          <p class="text-2xl" style="
-          font-weight: 400;
-          font-size: 24px;
-          line-height: 32px;
-          letter-spacing: -0.09em;
-          ">
+          <p class="text-xl md:text-2xl md:tracking-[-0.09em] ">
             With over 58+ years of legacy, Daewoo is now opening doors for
             strategic partners across 30 master franchise regions in India.
             Build a sustainable, high-margin business by aligning with a
@@ -135,7 +121,7 @@
         </div>
       </div>
 
-      <div class="bg-[#071827] text-white px-6 md:px-11 py-16 mx-2 md:mx-8 rounded-3xl">
+      <div class="bg-[#071827] text-white px-6 py-6 md:px-11 md:py-16 mx-2 md:mx-8 rounded-3xl">
         <div class="max-w-7xl mx-auto">
           <!-- Header -->
           <div class="mb-12">
@@ -144,8 +130,6 @@
             </button>
             <h2 class="text-3xl md:text-6xl leading-tight" style="
             font-weight: 400;
-            /* font-size: 60px; */
-            /* line-height: 73px; */
             letter-spacing: -0.09em; ">
               Why India. Why This is a <br class="hidden md:block" />
               Rare Opportunity
@@ -155,28 +139,28 @@
           <!-- Stats Grid -->
           <div class="grid grid-cols-1 items-end md:grid-cols-4 gap-4 md:gap-6">
             <!-- Card 1 -->
-            <div class="bg-[#0366D6] rounded-xl p-6 md:p-8 flex flex-col justify-end h-52 md:h-[440px] text-center ">
-              <h3 class="text-[80px] mb-1">160+</h3>
-              <p class="text-2xl opacity-80" style="letter-spacing: -0.09em;">Countries Served</p>
+            <div class="bg-[#0366D6] rounded-xl p-6 md:p-8 flex flex-col justify-end h-auto md:h-[440px] text-center ">
+              <h3 class="text-6xl md:text-[80px] mb-1">160+</h3>
+              <p class="text-xl md:text-2xl opacity-80" style="letter-spacing: -0.09em;">Countries Served</p>
             </div>
             <!-- Card 2 -->
-            <div class="bg-[#1789FC] rounded-xl p-6 md:p-8 flex flex-col justify-end h-52 md:h-[231px] text-center">
-              <h3 class="text-[80px] mb-1">10%</h3>
-              <p class="text-2xl opacity-80" style="letter-spacing: -0.09em;">
+            <div class="bg-[#1789FC] rounded-xl p-6 md:p-8 flex flex-col justify-end h-auto md:h-[231px] text-center">
+              <h3 class="text-6xl md:text-[80px] mb-1">10%</h3>
+              <p class="text-xl md:text-2xl opacity-80" style="letter-spacing: -0.09em;">
                 Compound Annual Growth Rate
               </p>
             </div>
             <!-- Card 3 -->
-            <div class="bg-[#3FA9F5] rounded-xl p-6 md:p-8 flex flex-col justify-end h-52 md:h-[400px] text-center">
-              <h3 class="text-[80px] mb-1">99%</h3>
-              <p class="text-2xl opacity-80" style="letter-spacing: -0.09em;">
+            <div class="bg-[#3FA9F5] rounded-xl p-6 md:p-8 flex flex-col justify-end h-auto md:h-[400px] text-center">
+              <h3 class="text-6xl md:text-[80px] mb-1">99%</h3>
+              <p class="text-xl md:text-2xl opacity-80" style="letter-spacing: -0.09em;">
                 Customer Satisfaction Rate
               </p>
             </div>
             <!-- Card 4 -->
-            <div class="bg-[#72C7FF] rounded-xl p-6 md:p-8 flex flex-col justify-end h-52 md:h-[286px] text-center">
-              <h3 class="text-[80px] mb-1">58+</h3>
-              <p class="text-2xl opacity-80" style="letter-spacing: -0.09em;">Years of Experience</p>
+            <div class="bg-[#72C7FF] rounded-xl p-6 md:p-8 flex flex-col justify-end h-auto md:h-[286px] text-center">
+              <h3 class="text-6xl md:text-[80px] mb-1">58+</h3>
+              <p class="text-xl md:text-2xl opacity-80" style="letter-spacing: -0.09em;">Years of Experience</p>
             </div>
           </div>
         </div>
@@ -187,13 +171,13 @@
   <section class="px-6 md:px-[76px] pt-10 md:pt-[130px]">
     <div class="bg-white ">
       <div class="max-w-7xl mx-auto mb-10 md:mb-28 flex justify-between flex-col md:flex-row gap-5 ">
-        <div class="flex flex-col justify-between md:w-1/2 mb-5 md:mb-0">
+        <div class="flex flex-col justify-between md:w-1/2 mb-5 md:mb-0 gap-3">
           <div>
-            <h2 class="text-4xl md:text-6xl ls mb-5">
+            <h2 class="text-4xl md:text-6xl md:tracking-[-0.09em] mb-5">
               Strong Returns. <br />
               Smart Investment.
             </h2>
-            <p class="ls text-2xl text-black/50">Varies by state population, infra & product mix.</p>
+            <p class=" text-2xl text-black/50 md:tracking-[-0.09em]">Varies by state population, infra & product mix.</p>
           </div>
           <!-- <p class="text-[20px] text-black/50">
             Get clear, transparent breakdowns of <br />
@@ -290,34 +274,18 @@
                   fill="white" />
               </svg>
             </div>
-            <h2 class="text-4xl md:text-6xl leading-tight mb-3.5">
+            <h2 class="text-4xl md:text-6xl md:leading-tight md:tracking-[-0.09em] mb-3.5">
               30 Master <br />
               Franchise Territories
             </h2>
-            <p class="text-[40px] mb-14" style="
-            font-weight: 400;
-            line-height: 51px;
-            /* or 128% */
-            letter-spacing: -0.09em;
-            
-            color: rgba(255, 255, 255, 0.5);
-            
-            ">
+            <p class="text-2xl md:text-[40px] md:leading-[51px] md:tracking-[-0.09em] mb-14" style="color: rgba(255, 255, 255, 0.5);">
               Each region gets<br /> exclusive rights to retail,<br /> distribution &
               service.
             </p>
             <div class="flex flex-col md:flex-row gap-9">
-              <p class="" style="
-              font-weight: 400;
-              font-size: 20px;
-              line-height: 28px;
-              /* or 140% */
-              letter-spacing: -0.09em;
-              
-              color: #FFFFFF;
-              
-              opacity: 0.5;
-              ">
+              <p class="text-[20px] leading-[28px] md:tracking-[-0.09rem]" 
+              style="color: #FFFFFF;
+              opacity: 0.5;">
                 Franchise slots filling fast, <br />
                 apply now to block your state.
               </p>
@@ -348,12 +316,12 @@
         <!-- Header Section -->
         <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-16 w-full">
           <h1
-            class="text-4xl md:text-5xl lg:text-[60px] font-normal leading-[1.2] tracking-[-0.09em] text-black max-w-[390px] relative z-10">
-            What Makes the<br />
+            class="text-2xl md:text-5xl lg:text-[60px] font-normal leading-[1.2] md:tracking-[-0.09em] text-black max-w-[390px] relative z-10">
+            What Makes the <br class="hidden md:block" />
             Brand Special?
           </h1>
           <p
-            class="text-base md:text-lg lg:text-[20px] font-normal leading-normal tracking-[-0.09em] text-black/50 max-w-[297px] mt-8 lg:mt-0">
+            class="text-base md:text-lg lg:text-[20px] font-normal leading-normal md:tracking-[-0.09em] text-black/50 max-w-[297px] md:mt-8 lg:mt-0">
             Daewoo Korea: Legendary Innovation,<br />
             Trusted Since 1967
           </p>
@@ -361,7 +329,7 @@
 
         <div class="flex flex-col lg:flex-row gap-8 lg:gap-[79px]">
           <!-- Product Image Container -->
-          <div class="flex-shrink-0 w-full lg:w-[525px] relative overflow-hidden rounded-[20px]">
+          <div class="flex-shrink-0 w-full lg:w-[525px] relative overflow-hidden rounded-[20px] h-96 md:h-auto ">
             <img id="featureimg1" src="./public/assets/portible-wm.png" alt="Korean R&D Product"
               class="feature-image w-full h-auto lg:w-[525px] lg:h-full object-cover absolute top-0 left-0 opacity-100" />
 
