@@ -1,138 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8" />
-  <title>Swiper demo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-  <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-  <!-- Demo styles -->
-  <style>
-    html,
-    body {
-      position: relative;
-      height: 100%;
-    }
-
-    body {
-      background: #000;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color: #fff;
-      margin: 0;
-      padding: 0;
-    }
-
-    .swiper {
-      width: 100%;
-      height: 100%;
-    }
-
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #444;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .autoplay-progress {
-      position: absolute;
-      right: 16px;
-      bottom: 16px;
-      z-index: 10;
-      width: 48px;
-      height: 48px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: bold;
-      color: var(--swiper-theme-color);
-    }
-
-    .autoplay-progress svg {
-      --progress: 0;
-      position: absolute;
-      left: 0;
-      top: 0px;
-      z-index: 10;
-      width: 100%;
-      height: 100%;
-      stroke-width: 4px;
-      stroke: var(--swiper-theme-color);
-      fill: none;
-      stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
-      stroke-dasharray: 125.6;
-      transform: rotate(-90deg);
-    }
-  </style>
-</head>
-
-<body>
-  <!-- Swiper -->
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      <div class="swiper-slide">Slide 4</div>
-      <!-- <div class="swiper-slide">Slide 5</div>
-      <div class="swiper-slide">Slide 6</div>
-      <div class="swiper-slide">Slide 7</div>
-      <div class="swiper-slide">Slide 8</div>
-      <div class="swiper-slide">Slide 9</div> -->
-    </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
-    <div class="autoplay-progress">
-      <svg viewBox="0 0 48 48">
-        <circle cx="24" cy="24" r="20"></circle>
-      </svg>
-      <span></span>
-    </div>
-  </div>
-
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-  <!-- Initialize Swiper -->
-  <script>
-    const progressCircle = document.querySelector(".autoplay-progress svg");
-    const progressContent = document.querySelector(".autoplay-progress span");
-    var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 30,
-      centeredSlides: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
-      },
-      on: {
-        autoplayTimeLeft(s, time, progress) {
-          progressCircle.style.setProperty("--progress", 1 - progress);
-          progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Magic Beam</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes beam-flow {
+            0% {
+                transform: translateX(-100%) rotate(-45deg);
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateX(300%) rotate(-45deg);
+                opacity: 0;
+            }
         }
-      }
-    });
-  </script>
-</body>
+        
+        @keyframes beam-pulse {
+            0%, 100% {
+                opacity: 0.5;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1.05);
+            }
+        }
+        
+        @keyframes particle-float {
+            0%, 100% {
+                transform: translateY(0px) rotate(0deg);
+                opacity: 0.7;
+            }
+            25% {
+                transform: translateY(-10px) rotate(90deg);
+                opacity: 1;
+            }
+            50% {
+                transform: translateY(-5px) rotate(180deg);
+                opacity: 0.8;
+            }
+            75% {
+                transform: translateY(-15px) rotate(270deg);
+                opacity: 0.9;
+            }
+        }
+        
+        .beam-container {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .beam-line {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, 
+                transparent 0%, 
+                #3b82f6 20%, 
+                #8b5cf6 40%, 
+                #ec4899 60%, 
+                #f59e0b 80%, 
+                transparent 100%
+            );
+            transform: translateY(-50%);
+            animation: beam-pulse 2s ease-in-out infinite;
+        }
+        
+        .beam-glow {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 20px;
+            background: linear-gradient(90deg, 
+                transparent 0%, 
+                rgba(59, 130, 246, 0.3) 20%, 
+                rgba(139, 92, 246, 0.3) 40%, 
+                rgba(236, 72, 153, 0.3) 60%, 
+                rgba(245, 158, 11, 0.3) 80%, 
+                transparent 100%
+            );
+            transform: translateY(-50%);
+            filter: blur(10px);
+            animation: beam-pulse 2s ease-in-out infinite;
+        }
+        
+        .beam-spark {
+            position: absolute;
+            width: 100px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #ffffff, transparent);
+            animation: beam-flow 3s linear infinite;
+            top: 50%;
+            transform: translateY(-50%) rotate(-45deg);
+        }
+        
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: #ffffff;
+            border-radius: 50%;
+            animation: particle-float 4s ease-in-out infinite;
+            box-shadow: 0 0 10px #3b82f6;
+        }
+        
+        .particle:nth-child(2) { animation-delay: -1s; left: 20%; }
+        .particle:nth-child(3) { animation-delay: -2s; left: 40%; }
+        .particle:nth-child(4) { animation-delay: -3s; left: 60%; }
+        .particle:nth-child(5) { animation-delay: -0.5s; left: 80%; }
+    </style>
+</head>
+<body class="bg-gray-900 min-h-screen flex items-center justify-center p-8">
+    <div class="w-full max-w-4xl">
+        <!-- Main Demo Section -->
+        <div class="bg-gray-800 rounded-2xl p-8 mb-8 shadow-2xl">
+            <h1 class="text-3xl font-bold text-white mb-8 text-center">Animated Magic Beam</h1>
+            
+            <!-- Horizontal Beam -->
+            <div class="beam-container h-20 bg-gray-700 rounded-lg mb-8 relative">
+                <div class="beam-glow"></div>
+                <div class="beam-line"></div>
+                <div class="beam-spark"></div>
+                <div class="particle" style="left: 10%; top: 30%;"></div>
+                <div class="particle" style="left: 25%; top: 70%;"></div>
+                <div class="particle" style="left: 45%; top: 20%;"></div>
+                <div class="particle" style="left: 65%; top: 80%;"></div>
+                <div class="particle" style="left: 85%; top: 40%;"></div>
+            </div>
+            
+            <!-- Connection Beams Between Elements -->
+            <div class="grid grid-cols-3 gap-8 mb-8">
+                <div class="relative">
+                    <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center shadow-lg">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <div class="absolute top-8 left-16 w-32 h-1 beam-container">
+                        <div class="beam-line h-full"></div>
+                        <div class="beam-spark"></div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center shadow-lg">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
+                        </svg>
+                    </div>
+                    <div class="absolute top-8 left-16 w-32 h-1 beam-container">
+                        <div class="beam-line h-full"></div>
+                        <div class="beam-spark"></div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="w-16 h-16 bg-pink-500 rounded-full flex items-center justify-center shadow-lg">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Vertical Beam -->
+            <div class="flex justify-center">
+                <div class="beam-container w-20 h-32 bg-gray-700 rounded-lg relative">
+                    <div class="absolute left-50% top-0 bottom-0 w-1 beam-container" style="left: 50%; transform: translateX(-50%); writing-mode: vertical-lr;">
+                        <div style="position: absolute; left: 50%; top: 0; bottom: 0; width: 4px; background: linear-gradient(180deg, transparent 0%, #3b82f6 20%, #8b5cf6 40%, #ec4899 60%, #f59e0b 80%, transparent 100%); transform: translateX(-50%); animation: beam-pulse 2s ease-in-out infinite;"></div>
+                        <div style="position: absolute; left: 50%; top: 0; bottom: 0; width: 20px; background: linear-gradient(180deg, transparent 0%, rgba(59, 130, 246, 0.3) 20%, rgba(139, 92, 246, 0.3) 40%, rgba(236, 72, 153, 0.3) 60%, rgba(245, 158, 11, 0.3) 80%, transparent 100%); transform: translateX(-50%); filter: blur(10px); animation: beam-pulse 2s ease-in-out infinite;"></div>
+                    </div>
+                    <div class="particle" style="left: 20%; top: 15%;"></div>
+                    <div class="particle" style="left: 70%; top: 35%;"></div>
+                    <div class="particle" style="left: 30%; top: 65%;"></div>
+                    <div class="particle" style="left: 80%; top: 85%;"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Interactive Controls -->
+        <div class="bg-gray-800 rounded-2xl p-6 shadow-2xl">
+            <h2 class="text-xl font-bold text-white mb-4">Interactive Controls</h2>
+            <div class="flex flex-wrap gap-4">
+                <button onclick="toggleAnimation()" class="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition-colors duration-200">
+                    Toggle Animation
+                </button>
+                <button onclick="changeSpeed('slow')" class="px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-lg transition-colors duration-200">
+                    Slow Speed
+                </button>
+                <button onclick="changeSpeed('normal')" class="px-4 py-2 bg-yellow-500 hover:bg-yellow-600 text-white rounded-lg transition-colors duration-200">
+                    Normal Speed
+                </button>
+                <button onclick="changeSpeed('fast')" class="px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded-lg transition-colors duration-200">
+                    Fast Speed
+                </button>
+            </div>
+        </div>
+    </div>
 
+    <script>
+        let isAnimating = true;
+        
+        function toggleAnimation() {
+            const beamElements = document.querySelectorAll('.beam-line, .beam-glow, .beam-spark, .particle');
+            isAnimating = !isAnimating;
+            
+            beamElements.forEach(element => {
+                element.style.animationPlayState = isAnimating ? 'running' : 'paused';
+            });
+        }
+        
+        function changeSpeed(speed) {
+            const beamElements = document.querySelectorAll('.beam-line, .beam-glow, .beam-spark, .particle');
+            let duration;
+            
+            switch(speed) {
+                case 'slow':
+                    duration = '4s';
+                    break;
+                case 'fast':
+                    duration = '1s';
+                    break;
+                default:
+                    duration = '2s';
+            }
+            
+            beamElements.forEach(element => {
+                if (element.classList.contains('beam-spark')) {
+                    element.style.animationDuration = speed === 'fast' ? '1.5s' : speed === 'slow' ? '6s' : '3s';
+                } else if (element.classList.contains('particle')) {
+                    element.style.animationDuration = speed === 'fast' ? '2s' : speed === 'slow' ? '8s' : '4s';
+                } else {
+                    element.style.animationDuration = duration;
+                }
+            });
+        }
+        
+        // Add some interactive sparkle effects on hover
+        document.querySelectorAll('.beam-container').forEach(container => {
+            container.addEventListener('mouseenter', function() {
+                this.style.transform = 'scale(1.02)';
+                this.style.transition = 'transform 0.3s ease';
+            });
+            
+            container.addEventListener('mouseleave', function() {
+                this.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
 </html>

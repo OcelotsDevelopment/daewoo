@@ -37,7 +37,7 @@ p {
 
 .custom-accordion .collapse-content {
   padding: 0 !important;
-  padding-top: 1.5rem !important;
+  /* padding-top: 1.5rem !important; */
 }
 
 .custom-accordion input[type="radio"]:checked ~ .collapse-content,
