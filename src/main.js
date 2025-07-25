@@ -4,6 +4,27 @@ import "@fontsource-variable/inter";
 import "./imgtran";
 import "./slideimg";
 
+document.addEventListener("DOMContentLoaded", function () {
+  const radioInputs = document.querySelectorAll(".accordn");
+
+  radioInputs.forEach((inp) => {
+    // Store the previous state
+    let wasChecked = inp.checked;
+
+    inp.addEventListener("click", function (e) {
+      console.log("Previous state:", wasChecked);
+      console.log("Current state:", e.target.checked);
+
+      if (wasChecked && e.target.checked) {
+        // It was checked before and still checked, so close it
+        e.target.checked = false;
+      }
+
+      // Update the previous state for next click
+      wasChecked = e.target.checked;
+    });
+  });
+});
 
 // [
 //     {
