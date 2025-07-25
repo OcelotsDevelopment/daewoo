@@ -4,6 +4,11 @@ import "@fontsource-variable/inter";
 import "./imgtran";
 import "./slideimg";
 
+// window.scrollTo({
+//   top: 0,
+//   behavior: "smooth",
+// });
+
 document.addEventListener("DOMContentLoaded", function () {
   const radioInputs = document.querySelectorAll(".accordn");
 
