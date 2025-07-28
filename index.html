@@ -12,35 +12,37 @@
 </head>
 
 <body>
-  <section id="hero"
-    class="relative w-full min-h-[120vh] md:h-[1024px] bg-cover bg-bottom-left md:bg-center overflow-hidden"
+  <section
+    class="relative w-full min-h-[120vh] md:min-h-screen lg:h-[1024px] bg-cover bg-bottom-left md:bg-center overflow-hidden"
     style="background-image: url('/assets/landing-img.webp')">
     <!-- Contact Now Button -->
-    <div class="absolute top-6 md:top-16 left-0 right-0 z-10 w-full">
-      <div class="flex items-center justify-between w-full px-2 sm:px-4 md:px-0 max-w-screen-xl mx-auto">
+    <div class="absolute top-6  lg:top-16 left-0 right-0  w-full z-50">
+      <div class="flex items-center justify-between w-full px-2 sm:px-4  max-w-screen-xl mx-auto">
         <img src="/logo.png" alt="Logo" class="h-6 md:h-9 w-auto" />
-        <button aria-label="Contact Now"
-          class="bg-white text-lg md:text-2xl text-gray-700 px-3 sm:px-4 md:px-2.5 py-0.5 sm:py-1.5 md:py-2 rounded-[10px] shadow-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-400">
+        <a href="#hero" 
+          class="bg-white text-lg md:text-2xl text-gray-700 px-3 sm:px-4 md:px-2.5 py-0.5 sm:py-1.5 md:py-2 rounded-[10px] shadow-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-400 cursor-pointer">
           Contact Now
-        </button>
+        </a>
       </div>
     </div>
 
     <!-- Overlay -->
     <div class="absolute inset-0 bg-black/35 md:bg-black/20 bg-opacity-40 pointer-events-none"></div>
 
+    <div id="hero" class="absolute top-56 -z-30"></div>
     <div
-      class="absolute left-1/2 -translate-x-1/2 z-10 w-full h-full flex flex-col lg:flex-row items-center lg:items-end justify-end md:justify-between gap-3.5 p-4 sm:px-4 md:px-0 pt-20 sm:py-16 md:py-20 max-w-screen-xl mx-auto">
+      class="absolute left-1/2 -translate-x-1/2 z-10 w-full h-full flex flex-col lg:flex-row items-center lg:items-end justify-end lg:justify-between gap-3.5 p-4 sm:px-4 md:px-0 pt-20 sm:py-16 md:py-20 max-w-screen-xl mx-auto">
       <!-- Left Text Content -->
-      <div class="text-white w-full lg:max-w-xl mb-8 lg:mb-0 text-center lg:text-left px-2 sm:px-0">
+      <div  class="text-white w-full lg:max-w-xl mb-8 lg:mb-0 text-center lg:text-left px-2 sm:px-0">
         <h1
+          
           class="text-3xl sm:text-3xl md:text-5xl lg:text-[75px] md:tracking-[-0.07em] mb-3 sm:mb-4 md:mb-6 font-light ">
-          Invest in India's <br class="hidden md:block" />
-          Next Tech Titan <br class="hidden md:block" />
-          Master Franchise <br class="hidden md:block" />
+          Invest in India's <br class="hidden lg:block" />
+          Next Tech Titan <br class="hidden lg:block" />
+          Master Franchise <br class="hidden lg:block" />
           Opportunity
         </h1>
-        <p class="text-base md:text-xl lg:text-2xl text-gray-200">
+        <p class="text-base md:text-2xl lg:text-2xl text-gray-200">
           Integrating Global-Standard Korean <br class="hidden md:block" /> Innovation with Indian Market Scale
         </p>
       </div>
@@ -48,7 +50,7 @@
       <!-- Form -->
       <div class="bg-[#088EED] backdrop-blur-md rounded-2xl p-6 md:p-8 w-full max-w-[510px] text-white shadow-xl flex flex-col gap-2 sm:gap-4">
         <h2
-          class="text-lg sm:text-2xl md:text-3xl lg:text-[40px] md:tracking-[-0.05em] leading-tight mb-2 sm:mb-4 md:mb-6 text-left ">
+          class="text-lg sm:text-2xl md:text-[36px] lg:text-[40px] md:tracking-[-0.05em] leading-tight mb-2 sm:mb-4 md:mb-6 text-left ">
           Let's Build the Next Big <br class="hidden md:block" />
           Brand Together
         </h2>
@@ -157,7 +159,7 @@
       "></div> -->
     <div class="">
       <div
-        class="flex flex-col-reverse md:flex-row justify-center items-start gap-10 md:gap-14 md:py-[136px] mx-4 md:mx-20 pt-5 mb-5">
+        class="flex flex-col-reverse lg:flex-row justify-center items-start gap-10 md:gap-14 md:py-[136px] mx-4 md:mx-20 pt-5 mb-5">
         <div class="md:w-[577px]">
           <img src="./public/assets/daewooModl.webp" alt="" class="w-full rounded-[20px]">
         </div>
@@ -197,27 +199,27 @@
           <div class="grid grid-cols-1 items-end md:grid-cols-4 gap-4 md:gap-6">
             <!-- Card 1 -->
             <div class="bg-[#0366D6] rounded-xl p-6 md:p-8 flex flex-col justify-end h-auto md:h-[440px] text-center ">
-              <h3 class="text-6xl md:text-[80px] mb-1">160+</h3>
-              <p class="text-xl md:text-2xl opacity-80" style="letter-spacing: -0.05em;">Countries Served</p>
+              <h3 class="text-6xl md:text-5xl lg:text-[80px] mb-1">160+</h3>
+              <p class="text-xl md:text-lg lg:text-2xl opacity-80" style="letter-spacing: -0.05em;">Countries Served</p>
             </div>
             <!-- Card 2 -->
             <div class="bg-[#1789FC] rounded-xl p-6 md:p-8 flex flex-col justify-end h-auto md:h-[231px] text-center">
-              <h3 class="text-6xl md:text-[80px] mb-1">10%</h3>
-              <p class="text-xl md:text-2xl opacity-80" style="letter-spacing: -0.05em;">
+              <h3 class="text-6xl md:text-5xl lg:text-[80px] mb-1">10%</h3>
+              <p class="text-xl md:text-lg lg:text-2xl opacity-80" style="letter-spacing: -0.05em;">
                 Compound Annual Growth Rate
               </p>
             </div>
             <!-- Card 3 -->
             <div class="bg-[#3FA9F5] rounded-xl p-6 md:p-8 flex flex-col justify-end h-auto md:h-[400px] text-center">
-              <h3 class="text-6xl md:text-[80px] mb-1">99%</h3>
-              <p class="text-xl md:text-2xl opacity-80" style="letter-spacing: -0.05em;">
+              <h3 class="text-6xl md:text-5xl lg:text-[80px] mb-1">99%</h3>
+              <p class="text-xl md:text-lg lg:text-2xl opacity-80" style="letter-spacing: -0.05em;">
                 Customer Satisfaction Rate
               </p>
             </div>
             <!-- Card 4 -->
             <div class="bg-[#72C7FF] rounded-xl p-6 md:p-8 flex flex-col justify-end h-auto md:h-[286px] text-center">
-              <h3 class="text-6xl md:text-[80px] mb-1">58+</h3>
-              <p class="text-xl md:text-2xl opacity-80" style="letter-spacing: -0.05em;">Years of Experience</p>
+              <h3 class="text-6xl md:text-5xl lg:text-[80px] mb-1">58+</h3>
+              <p class="text-xl md:text-lg lg:text-2xl opacity-80" style="letter-spacing: -0.05em;">Years of Experience</p>
             </div>
           </div>
         </div>
@@ -227,8 +229,8 @@
 
   <section class="px-6 md:px-[76px] pt-10 md:pt-[130px]">
     <div class=" ">
-      <div class="max-w-7xl mx-auto mb-10 md:mb-28 flex justify-between flex-col md:flex-row gap-5 ">
-        <div class="flex flex-col justify-between md:w-1/2 mb-5 md:mb-0 gap-3">
+      <div class="max-w-7xl mx-auto mb-10 md:mb-28 flex justify-between flex-col lg:flex-row gap-5 ">
+        <div class="flex flex-col justify-between lg:w-1/2 mb-5 md:mb-0 gap-3">
           <div>
             <h2 class="text-3xl md:text-5xl md:tracking-[-0.05em] md:leading-[68px] mb-5">
               Strong Returns. <br />
@@ -247,7 +249,7 @@
           <img src="./public/assets/storRet.webp" alt="" class="md:mt-12 md:h-[363px] rounded-[20px]">
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-gray-800 md:w-1/2">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-gray-800 lg:w-1/2">
           <!-- Card 1 -->
           <div class="bg-gray-100 rounded-xl p-4 md:p-6 shadow-sm flex flex-row md:flex-col gap-5">
             <div class="text-blue-600 text-3xl mb-5 md:mb-24">
@@ -329,7 +331,7 @@
       </div>
 
       <div class="bg-[#0071CE] text-white rounded-3xl max-w-7xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 items-start gap-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 items-start gap-10">
           <!-- LEFT TEXT SIDE -->
           <div class="pt-6 px-6 md:pt-[61px] md:px-9">
             <div class="mb-5 md:mb-20">
@@ -398,7 +400,7 @@
           <!-- Product Image Container -->
           <!-- <div class="sticky top-0 z-20 md:static md:z-0 h-full "> -->
           <div
-            class="flex-shrink-0 w-full lg:w-[525px] sticky md:rounded-[20px] top-0 z-20 md:relative overflow-hidden h-[16.5rem] md:h-auto bg-white dark:bg-[#1d232a] pt-5 md:pt-0 ">
+            class="flex-shrink-0 w-full lg:w-[525px] sticky md:rounded-[20px] top-0 z-20 md:relative overflow-hidden h-[16.5rem] md:h-[30rem] lg:h-auto bg-white dark:bg-[#1d232a] pt-5 md:pt-0 ">
             <!-- <div class=" pt-3"> -->
             <img id="featureimg1" src="./public/davuda/1.webp" alt="Korean R&D Product"
               class="feature-image w-full h-auto lg:w-[525px] lg:h-full object-cover absolute md:top-0 left-0 opacity-100  md:pt-0 rounded-[20px]" />
@@ -567,7 +569,7 @@
 
               <!-- Right side: Arrow graphic -->
               <div
-                class="absolute md:static bottom-2 left-1.5 -z-10 flex items-center justify-center lg:justify-end flex-1">
+                class="absolute lg:static bottom-2 left-1.5 -z-10 flex items-center justify-center lg:justify-end flex-1">
                 <img src="./public/assets/newArrowBg.png" alt="Growth arrow"
                   class=" w-full max-w-[350px] lg:max-w-[550px] h-auto lg:h-[380px] object-cover mix-blend-luminosity opacity-30" />
               </div>
@@ -621,13 +623,13 @@
           </div>
 
           <!-- Content -->
-          <div class="flex-1 md:w-1/2 lg:w-auto">
+          <div class="flex-1 md:w-full lg:w-1/2 ">
             <h2 class="text-3xl md:text-5xl font-normal leading-[1.2] tracking-[-0.05em]  mb-8 lg:mb-[30px] ">
-              Master Franchise<br />
+              Master Franchise<br class="" />
               Partner Benefits
             </h2>
             <ul
-              class="space-y-6 lg:space-y-8 text-base md:text-lg font-normal leading-[20px] tracking-[-0.02em] text-black/50 dark:text-white/80 list-disc ml-5 md:ml-0 ">
+              class="space-y-6 lg:space-y-8 text-base sm:text-lg font-normal leading-[20px] tracking-[-0.02em] text-black/50 dark:text-white/80 list-disc ml-5 md:ml-7 lg:ml-0 ">
               <li>
                 Full operational support – Product supply, ERP, design,
                 hiring
