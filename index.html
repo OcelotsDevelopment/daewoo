@@ -57,15 +57,15 @@
         <form class="space-y-5" autocomplete="off">
           <div class="flex flex-col sm:flex-row gap-5 md:gap-3 sm:gap-4">
             <input type="text" placeholder="First Name"
-              class="w-full sm:w-1/2 px-2 md:pr-4 py-2 md:py-3 bg-transparent border-b border-white  placeholder-white text-sm md:text-base rounded-none focus:outline-none focus:border-white transition" />
-            <input  type="text" placeholder="Last Name"
-              class="w-full sm:w-1/2 px-2 md:pr-4 py-2 md:py-3 bg-transparent border-b border-white placeholder-white text-sm md:text-base rounded-none focus:outline-none focus:border-white transition" />
+              class="w-full sm:w-1/2 px-2 md:pr-4 py-2 md:py-3 bg-transparent border-b border-white placeholder-white text-base rounded-none focus:outline-none focus:border-white transition" />
+            <input type="text" placeholder="Last Name"
+              class="w-full sm:w-1/2 px-2 md:pr-4 py-2 md:py-3 bg-transparent border-b border-white placeholder-white text-base rounded-none focus:outline-none focus:border-white transition" />
           </div>
-          <input  type="text" placeholder="Phone Number"
-            class="w-full px-2 md:pr-4 py-2 md:py-3 bg-transparent border-b border-white placeholder-white text-sm md:text-base rounded-none focus:outline-none focus:border-white transition" />
+          <input type="text" placeholder="Phone Number"
+            class="w-full px-2 md:pr-4 py-2 md:py-3 bg-transparent border-b border-white placeholder-white text-base rounded-none focus:outline-none focus:border-white transition" />
           <input type="email" placeholder="Email"
-            class="w-full px-2 md:pr-4 py-2 md:py-3 bg-transparent border-b border-white placeholder-white text-sm md:text-base rounded-none focus:outline-none focus:border-white transition" />
-          <div class="relative ">
+            class="w-full px-2 md:pr-4 py-2 md:py-3 bg-transparent border-b border-white placeholder-white text-base rounded-none focus:outline-none focus:border-white transition" />
+          <div class="relative">
             <div class="absolute right-1.5 top-1/2 -translate-y-1/2">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -74,7 +74,7 @@
               </svg>
             </div>
             <select 
-              class="w-full px-2 md:pr-4 py-2 md:py-3 bg-transparent border-b border-white text-white text-sm md:text-base appearance-none rounded-none focus:outline-none focus:border-white transition">
+              class="w-full px-2 md:pr-4 py-2 md:py-3 bg-transparent border-b border-white text-white text-base appearance-none rounded-none focus:outline-none focus:border-white transition">
               <option class="text-black" disabled selected>State</option>
               <option class="text-black" value="Andhra Pradesh">Andhra Pradesh</option>
               <option class="text-black" value="Arunachal Pradesh">Arunachal Pradesh</option>
@@ -106,9 +106,7 @@
               <option class="text-black" value="West Bengal">West Bengal</option>
               <option class="text-black" value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
               <option class="text-black" value="Chandigarh">Chandigarh</option>
-              <option class="text-black" value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and
-                Daman
-                and Diu</option>
+              <option class="text-black" value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and Diu</option>
               <option class="text-black" value="Delhi">Delhi</option>
               <option class="text-black" value="Jammu and Kashmir">Jammu and Kashmir</option>
               <option class="text-black" value="Ladakh">Ladakh</option>
@@ -117,20 +115,20 @@
             </select>
           </div>
           <div class="relative">
-          <select
-            class="w-full px-2 md:pr-4 py-2 md:py-3 bg-transparent border-b border-white text-white text-sm md:text-base appearance-none rounded-none focus:outline-none focus:border-white transition">
-            <option class="text-black" disabled selected>Investment Capacity</option>
-            <option class="text-black">₹5L – ₹20L</option>
-            <option class="text-black">₹20L – ₹1Cr</option>
-            <option class="text-black">₹1Cr+</option>
-          </select>
-          <div class="absolute right-1.5 top-1/2 -translate-y-1/2">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              class="lucide lucide-chevron-down-icon lucide-chevron-down">
-              <path d="m6 9 6 6 6-6" />
-            </svg>
-          </div>
+            <select
+              class="w-full px-2 md:pr-4 py-2 md:py-3 bg-transparent border-b border-white text-white text-base appearance-none rounded-none focus:outline-none focus:border-white transition">
+              <option class="text-black" disabled selected>Investment Capacity</option>
+              <option class="text-black">₹5L – ₹20L</option>
+              <option class="text-black">₹20L – ₹1Cr</option>
+              <option class="text-black">₹1Cr+</option>
+            </select>
+            <div class="absolute right-1.5 top-1/2 -translate-y-1/2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-chevron-down-icon lucide-chevron-down">
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </div>
           </div>
           <div class="flex justify-center lg:justify-start">
             <button aria-label="Submit" type="submit"
